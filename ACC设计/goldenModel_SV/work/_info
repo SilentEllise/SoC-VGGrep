@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/FPGA_gmy/Questasim_projects/SoC_final
+vgolden_model
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 d[cBIZ_50@VG`f[lUnIAT1
+IhjGA>1=QjbDlWjV:bToJ60
+!s105 golden_model_sv_unit
+S1
+dD:/MONE/SoC/Final_project/goldenModel/goldenModel_SV
+w1625152667
+8D:/MONE/SoC/Final_project/goldenModel/goldenModel_SV/golden_model.sv
+FD:/MONE/SoC/Final_project/goldenModel/goldenModel_SV/golden_model.sv
+L0 4
+OL;L;10.6c;65
+!s108 1625152674.000000
+!s107 D:/MONE/SoC/Final_project/goldenModel/goldenModel_SV/golden_model.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/MONE/SoC/Final_project/goldenModel/goldenModel_SV/golden_model.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

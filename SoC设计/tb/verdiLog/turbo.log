@@ -1,0 +1,4 @@
+Command Line: /home/riscv/synopsys/verdi_2016.06-1/platform/LINUXAMD64/bin/Novas
+uname(Linux ubuntu 4.15.0-142-generic #146~16.04.1-Ubuntu SMP Tue Apr 13 09:27:15 UTC 2021 x86_64)
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 6.516530 1.792384 0.155121 delta 199438336 199438336 total 583184384 583184384

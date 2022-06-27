@@ -1,0 +1,3 @@
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiSetPrefEnv -bDisplayWelcome "off"
+debExit

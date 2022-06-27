@@ -1,0 +1,114 @@
+Magic 271485
+Revision Verdi3_L-2016.06-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 28 1301 641 299 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/riscv/e200_320/vsim/run/rv32ui-p-add/tb_top.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 50392568.189174 50449827.191054
+cursor 50443000.000000
+marker 50415000.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 2
+; marker line index
+markerPos 26
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/riscv/e200_320/vsim/run/rv32ui-p-add/tb_top.fsdb"
+addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/clk_aon
+addSignal -h 15 -holdScope clk_core_biu
+addSignal -h 15 -holdScope clk_core_exu
+addSignal -h 15 -holdScope clk_core_ifu
+addSignal -h 15 -holdScope clk_core_lsu
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_addr[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_beat[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_burst[1:0]
+addSignal -h 15 -holdScope mem_icb_cmd_excl
+addSignal -h 15 -holdScope mem_icb_cmd_lock
+addSignal -h 15 -holdScope mem_icb_cmd_read
+addSignal -h 15 -holdScope mem_icb_cmd_ready
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_size[1:0]
+addSignal -h 15 -holdScope mem_icb_cmd_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_wdata[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_cmd_wmask[3:0]
+addSignal -h 15 -holdScope mem_icb_enable
+addSignal -h 15 -holdScope mem_icb_rsp_err
+addSignal -h 15 -holdScope mem_icb_rsp_excl_ok
+addSignal -h 15 -UNSIGNED -HEX -holdScope mem_icb_rsp_rdata[31:0]
+addSignal -h 15 -holdScope mem_icb_rsp_ready
+addSignal -h 15 -holdScope mem_icb_rsp_valid
+addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mem_fab/splt_bus_icb_cmd_addr[287:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope splt_bus_icb_cmd_wdata[287:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope splt_bus_icb_rsp_rdata[287:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/riscv/e200_320/vsim/run/rv32ui-p-add/tb_top.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_top"
+"/tb_top/u_e203_soc_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mem_fab"
+
+SCOPE_LIST_BEGIN
+"/tb_top"
+"/tb_top/u_e203_soc_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_extend_csr"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_commit"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_perips_expl_axi_slv"
+"/tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mem_fab"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
