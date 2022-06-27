@@ -1,0 +1,1012 @@
+Loading db file '/home/riscv/library/dc/saed32rvt_ss0p95v125c.db'
+Loading db file '/home/riscv/library/dc/sram_4kx64_ss_0p99v_0p99v_125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: H-2013.03-SP2
+Date   : Mon Jul  5 16:47:57 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/riscv/library/dc/saed32rvt_ss0p95v125c.db)
+    sram_4kx64_ss_0p99v_0p99v_125c (File: /home/riscv/library/dc/sram_4kx64_ss_0p99v_0p99v_125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    16000             saed32rvt_ss0p95v125c
+top_acce               2000000           saed32rvt_ss0p95v125c
+icb_ctrl_sla           ForQA             saed32rvt_ss0p95v125c
+icb_ctrl_mas           8000              saed32rvt_ss0p95v125c
+conv_0                 70000             saed32rvt_ss0p95v125c
+ReLU                   8000              saed32rvt_ss0p95v125c
+conv_post              1000000           saed32rvt_ss0p95v125c
+weight_distribution    140000            saed32rvt_ss0p95v125c
+fifo_0                 16000             saed32rvt_ss0p95v125c
+PE_0                   ForQA             saed32rvt_ss0p95v125c
+counterGroup_0         8000              saed32rvt_ss0p95v125c
+multiplierBar_0        16000             saed32rvt_ss0p95v125c
+multiplierGroup_0      16000             saed32rvt_ss0p95v125c
+crossBar               35000             saed32rvt_ss0p95v125c
+sramArray              1000000           saed32rvt_ss0p95v125c
+mux2_0                 ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_0       8000              saed32rvt_ss0p95v125c
+adderTree_0            8000              saed32rvt_ss0p95v125c
+adder4_0               8000              saed32rvt_ss0p95v125c
+mux8                   8000              saed32rvt_ss0p95v125c
+mux2_64bit             ForQA             saed32rvt_ss0p95v125c
+sequence2parallel_0    8000              saed32rvt_ss0p95v125c
+accumulator_0          140000            saed32rvt_ss0p95v125c
+adder32_0              8000              saed32rvt_ss0p95v125c
+parallelAdder_0        8000              saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_0
+                       140000            saed32rvt_ss0p95v125c
+conv_1                 70000             saed32rvt_ss0p95v125c
+conv_2                 70000             saed32rvt_ss0p95v125c
+conv_3                 70000             saed32rvt_ss0p95v125c
+fifo_1                 16000             saed32rvt_ss0p95v125c
+fifo_2                 16000             saed32rvt_ss0p95v125c
+fifo_3                 16000             saed32rvt_ss0p95v125c
+fifo_4                 16000             saed32rvt_ss0p95v125c
+fifo_5                 16000             saed32rvt_ss0p95v125c
+fifo_6                 16000             saed32rvt_ss0p95v125c
+fifo_7                 16000             saed32rvt_ss0p95v125c
+PE_1                   ForQA             saed32rvt_ss0p95v125c
+PE_2                   ForQA             saed32rvt_ss0p95v125c
+PE_3                   ForQA             saed32rvt_ss0p95v125c
+PE_4                   ForQA             saed32rvt_ss0p95v125c
+PE_5                   ForQA             saed32rvt_ss0p95v125c
+PE_6                   ForQA             saed32rvt_ss0p95v125c
+PE_7                   ForQA             saed32rvt_ss0p95v125c
+PE_8                   ForQA             saed32rvt_ss0p95v125c
+PE_9                   ForQA             saed32rvt_ss0p95v125c
+PE_10                  ForQA             saed32rvt_ss0p95v125c
+PE_11                  ForQA             saed32rvt_ss0p95v125c
+PE_12                  ForQA             saed32rvt_ss0p95v125c
+PE_13                  ForQA             saed32rvt_ss0p95v125c
+PE_14                  ForQA             saed32rvt_ss0p95v125c
+PE_15                  ForQA             saed32rvt_ss0p95v125c
+PE_16                  ForQA             saed32rvt_ss0p95v125c
+PE_17                  ForQA             saed32rvt_ss0p95v125c
+PE_18                  ForQA             saed32rvt_ss0p95v125c
+PE_19                  ForQA             saed32rvt_ss0p95v125c
+PE_20                  ForQA             saed32rvt_ss0p95v125c
+PE_21                  ForQA             saed32rvt_ss0p95v125c
+PE_22                  ForQA             saed32rvt_ss0p95v125c
+PE_23                  ForQA             saed32rvt_ss0p95v125c
+PE_24                  ForQA             saed32rvt_ss0p95v125c
+PE_25                  ForQA             saed32rvt_ss0p95v125c
+PE_26                  ForQA             saed32rvt_ss0p95v125c
+PE_27                  ForQA             saed32rvt_ss0p95v125c
+PE_28                  ForQA             saed32rvt_ss0p95v125c
+PE_29                  ForQA             saed32rvt_ss0p95v125c
+PE_30                  ForQA             saed32rvt_ss0p95v125c
+PE_31                  ForQA             saed32rvt_ss0p95v125c
+PE_32                  ForQA             saed32rvt_ss0p95v125c
+PE_33                  ForQA             saed32rvt_ss0p95v125c
+PE_34                  ForQA             saed32rvt_ss0p95v125c
+PE_35                  ForQA             saed32rvt_ss0p95v125c
+counterGroup_1         8000              saed32rvt_ss0p95v125c
+counterGroup_2         8000              saed32rvt_ss0p95v125c
+counterGroup_3         8000              saed32rvt_ss0p95v125c
+multiplierBar_1        16000             saed32rvt_ss0p95v125c
+multiplierBar_2        16000             saed32rvt_ss0p95v125c
+multiplierBar_3        16000             saed32rvt_ss0p95v125c
+multiplierGroup_1      16000             saed32rvt_ss0p95v125c
+multiplierGroup_2      16000             saed32rvt_ss0p95v125c
+multiplierGroup_3      16000             saed32rvt_ss0p95v125c
+mux2_1                 ForQA             saed32rvt_ss0p95v125c
+mux2_2                 ForQA             saed32rvt_ss0p95v125c
+mux2_3                 ForQA             saed32rvt_ss0p95v125c
+mux2_4                 ForQA             saed32rvt_ss0p95v125c
+mux2_5                 ForQA             saed32rvt_ss0p95v125c
+mux2_6                 ForQA             saed32rvt_ss0p95v125c
+mux2_7                 ForQA             saed32rvt_ss0p95v125c
+mux2_8                 ForQA             saed32rvt_ss0p95v125c
+mux2_9                 ForQA             saed32rvt_ss0p95v125c
+mux2_10                ForQA             saed32rvt_ss0p95v125c
+mux2_11                ForQA             saed32rvt_ss0p95v125c
+mux2_12                ForQA             saed32rvt_ss0p95v125c
+mux2_13                ForQA             saed32rvt_ss0p95v125c
+mux2_14                ForQA             saed32rvt_ss0p95v125c
+mux2_15                ForQA             saed32rvt_ss0p95v125c
+mux2_16                ForQA             saed32rvt_ss0p95v125c
+mux2_17                ForQA             saed32rvt_ss0p95v125c
+mux2_18                ForQA             saed32rvt_ss0p95v125c
+mux2_19                ForQA             saed32rvt_ss0p95v125c
+mux2_20                ForQA             saed32rvt_ss0p95v125c
+mux2_21                ForQA             saed32rvt_ss0p95v125c
+mux2_22                ForQA             saed32rvt_ss0p95v125c
+mux2_23                ForQA             saed32rvt_ss0p95v125c
+mux2_24                ForQA             saed32rvt_ss0p95v125c
+mux2_25                ForQA             saed32rvt_ss0p95v125c
+mux2_26                ForQA             saed32rvt_ss0p95v125c
+mux2_27                ForQA             saed32rvt_ss0p95v125c
+mux2_28                ForQA             saed32rvt_ss0p95v125c
+mux2_29                ForQA             saed32rvt_ss0p95v125c
+mux2_30                ForQA             saed32rvt_ss0p95v125c
+mux2_31                ForQA             saed32rvt_ss0p95v125c
+mux2_32                ForQA             saed32rvt_ss0p95v125c
+mux2_33                ForQA             saed32rvt_ss0p95v125c
+mux2_34                ForQA             saed32rvt_ss0p95v125c
+mux2_35                ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_1       8000              saed32rvt_ss0p95v125c
+multiplier8bit_2       8000              saed32rvt_ss0p95v125c
+multiplier8bit_3       8000              saed32rvt_ss0p95v125c
+multiplier8bit_4       8000              saed32rvt_ss0p95v125c
+multiplier8bit_5       8000              saed32rvt_ss0p95v125c
+multiplier8bit_6       8000              saed32rvt_ss0p95v125c
+multiplier8bit_7       8000              saed32rvt_ss0p95v125c
+multiplier8bit_8       8000              saed32rvt_ss0p95v125c
+multiplier8bit_9       8000              saed32rvt_ss0p95v125c
+multiplier8bit_10      8000              saed32rvt_ss0p95v125c
+multiplier8bit_11      8000              saed32rvt_ss0p95v125c
+multiplier8bit_12      8000              saed32rvt_ss0p95v125c
+multiplier8bit_13      8000              saed32rvt_ss0p95v125c
+multiplier8bit_14      8000              saed32rvt_ss0p95v125c
+multiplier8bit_15      8000              saed32rvt_ss0p95v125c
+multiplier8bit_16      8000              saed32rvt_ss0p95v125c
+multiplier8bit_17      8000              saed32rvt_ss0p95v125c
+multiplier8bit_18      8000              saed32rvt_ss0p95v125c
+multiplier8bit_19      8000              saed32rvt_ss0p95v125c
+multiplier8bit_20      8000              saed32rvt_ss0p95v125c
+multiplier8bit_21      8000              saed32rvt_ss0p95v125c
+multiplier8bit_22      8000              saed32rvt_ss0p95v125c
+multiplier8bit_23      8000              saed32rvt_ss0p95v125c
+multiplier8bit_24      8000              saed32rvt_ss0p95v125c
+multiplier8bit_25      8000              saed32rvt_ss0p95v125c
+multiplier8bit_26      8000              saed32rvt_ss0p95v125c
+multiplier8bit_27      8000              saed32rvt_ss0p95v125c
+multiplier8bit_28      8000              saed32rvt_ss0p95v125c
+multiplier8bit_29      8000              saed32rvt_ss0p95v125c
+multiplier8bit_30      8000              saed32rvt_ss0p95v125c
+multiplier8bit_31      8000              saed32rvt_ss0p95v125c
+multiplier8bit_32      8000              saed32rvt_ss0p95v125c
+multiplier8bit_33      8000              saed32rvt_ss0p95v125c
+multiplier8bit_34      8000              saed32rvt_ss0p95v125c
+multiplier8bit_35      8000              saed32rvt_ss0p95v125c
+multiplier8bit_36      8000              saed32rvt_ss0p95v125c
+multiplier8bit_37      8000              saed32rvt_ss0p95v125c
+multiplier8bit_38      8000              saed32rvt_ss0p95v125c
+multiplier8bit_39      8000              saed32rvt_ss0p95v125c
+multiplier8bit_40      8000              saed32rvt_ss0p95v125c
+multiplier8bit_41      8000              saed32rvt_ss0p95v125c
+multiplier8bit_42      8000              saed32rvt_ss0p95v125c
+multiplier8bit_43      8000              saed32rvt_ss0p95v125c
+multiplier8bit_44      8000              saed32rvt_ss0p95v125c
+multiplier8bit_45      8000              saed32rvt_ss0p95v125c
+multiplier8bit_46      8000              saed32rvt_ss0p95v125c
+multiplier8bit_47      8000              saed32rvt_ss0p95v125c
+multiplier8bit_48      8000              saed32rvt_ss0p95v125c
+multiplier8bit_49      8000              saed32rvt_ss0p95v125c
+multiplier8bit_50      8000              saed32rvt_ss0p95v125c
+multiplier8bit_51      8000              saed32rvt_ss0p95v125c
+multiplier8bit_52      8000              saed32rvt_ss0p95v125c
+multiplier8bit_53      8000              saed32rvt_ss0p95v125c
+multiplier8bit_54      8000              saed32rvt_ss0p95v125c
+multiplier8bit_55      8000              saed32rvt_ss0p95v125c
+multiplier8bit_56      8000              saed32rvt_ss0p95v125c
+multiplier8bit_57      8000              saed32rvt_ss0p95v125c
+multiplier8bit_58      8000              saed32rvt_ss0p95v125c
+multiplier8bit_59      8000              saed32rvt_ss0p95v125c
+multiplier8bit_60      8000              saed32rvt_ss0p95v125c
+multiplier8bit_61      8000              saed32rvt_ss0p95v125c
+multiplier8bit_62      8000              saed32rvt_ss0p95v125c
+multiplier8bit_63      8000              saed32rvt_ss0p95v125c
+multiplier8bit_64      8000              saed32rvt_ss0p95v125c
+multiplier8bit_65      8000              saed32rvt_ss0p95v125c
+multiplier8bit_66      8000              saed32rvt_ss0p95v125c
+multiplier8bit_67      8000              saed32rvt_ss0p95v125c
+multiplier8bit_68      8000              saed32rvt_ss0p95v125c
+multiplier8bit_69      8000              saed32rvt_ss0p95v125c
+multiplier8bit_70      8000              saed32rvt_ss0p95v125c
+multiplier8bit_71      8000              saed32rvt_ss0p95v125c
+multiplier8bit_72      8000              saed32rvt_ss0p95v125c
+multiplier8bit_73      8000              saed32rvt_ss0p95v125c
+multiplier8bit_74      8000              saed32rvt_ss0p95v125c
+multiplier8bit_75      8000              saed32rvt_ss0p95v125c
+multiplier8bit_76      8000              saed32rvt_ss0p95v125c
+multiplier8bit_77      8000              saed32rvt_ss0p95v125c
+multiplier8bit_78      8000              saed32rvt_ss0p95v125c
+multiplier8bit_79      8000              saed32rvt_ss0p95v125c
+multiplier8bit_80      8000              saed32rvt_ss0p95v125c
+multiplier8bit_81      8000              saed32rvt_ss0p95v125c
+multiplier8bit_82      8000              saed32rvt_ss0p95v125c
+multiplier8bit_83      8000              saed32rvt_ss0p95v125c
+multiplier8bit_84      8000              saed32rvt_ss0p95v125c
+multiplier8bit_85      8000              saed32rvt_ss0p95v125c
+multiplier8bit_86      8000              saed32rvt_ss0p95v125c
+multiplier8bit_87      8000              saed32rvt_ss0p95v125c
+multiplier8bit_88      8000              saed32rvt_ss0p95v125c
+multiplier8bit_89      8000              saed32rvt_ss0p95v125c
+multiplier8bit_90      8000              saed32rvt_ss0p95v125c
+multiplier8bit_91      8000              saed32rvt_ss0p95v125c
+multiplier8bit_92      8000              saed32rvt_ss0p95v125c
+multiplier8bit_93      8000              saed32rvt_ss0p95v125c
+multiplier8bit_94      8000              saed32rvt_ss0p95v125c
+multiplier8bit_95      8000              saed32rvt_ss0p95v125c
+multiplier8bit_96      8000              saed32rvt_ss0p95v125c
+multiplier8bit_97      8000              saed32rvt_ss0p95v125c
+multiplier8bit_98      8000              saed32rvt_ss0p95v125c
+multiplier8bit_99      8000              saed32rvt_ss0p95v125c
+adderTree_1            8000              saed32rvt_ss0p95v125c
+adderTree_2            8000              saed32rvt_ss0p95v125c
+adderTree_3            8000              saed32rvt_ss0p95v125c
+adder4_1               8000              saed32rvt_ss0p95v125c
+adder4_2               8000              saed32rvt_ss0p95v125c
+adder4_3               8000              saed32rvt_ss0p95v125c
+adder4_4               8000              saed32rvt_ss0p95v125c
+adder4_5               8000              saed32rvt_ss0p95v125c
+adder4_6               8000              saed32rvt_ss0p95v125c
+adder4_7               8000              saed32rvt_ss0p95v125c
+adder4_8               8000              saed32rvt_ss0p95v125c
+adder4_9               8000              saed32rvt_ss0p95v125c
+adder4_10              8000              saed32rvt_ss0p95v125c
+adder4_11              8000              saed32rvt_ss0p95v125c
+adder4_12              8000              saed32rvt_ss0p95v125c
+adder4_13              8000              saed32rvt_ss0p95v125c
+adder4_14              8000              saed32rvt_ss0p95v125c
+adder4_15              8000              saed32rvt_ss0p95v125c
+sequence2parallel_1    8000              saed32rvt_ss0p95v125c
+sequence2parallel_2    8000              saed32rvt_ss0p95v125c
+sequence2parallel_3    8000              saed32rvt_ss0p95v125c
+sequence2parallel_4    8000              saed32rvt_ss0p95v125c
+sequence2parallel_5    8000              saed32rvt_ss0p95v125c
+sequence2parallel_6    8000              saed32rvt_ss0p95v125c
+sequence2parallel_7    8000              saed32rvt_ss0p95v125c
+sequence2parallel_8    8000              saed32rvt_ss0p95v125c
+sequence2parallel_9    8000              saed32rvt_ss0p95v125c
+sequence2parallel_10   8000              saed32rvt_ss0p95v125c
+sequence2parallel_11   8000              saed32rvt_ss0p95v125c
+sequence2parallel_12   8000              saed32rvt_ss0p95v125c
+sequence2parallel_13   8000              saed32rvt_ss0p95v125c
+sequence2parallel_14   8000              saed32rvt_ss0p95v125c
+sequence2parallel_15   8000              saed32rvt_ss0p95v125c
+accumulator_1          140000            saed32rvt_ss0p95v125c
+accumulator_2          140000            saed32rvt_ss0p95v125c
+accumulator_3          140000            saed32rvt_ss0p95v125c
+accumulator_4          140000            saed32rvt_ss0p95v125c
+accumulator_5          140000            saed32rvt_ss0p95v125c
+accumulator_6          140000            saed32rvt_ss0p95v125c
+accumulator_7          140000            saed32rvt_ss0p95v125c
+adder32_1              ForQA             saed32rvt_ss0p95v125c
+adder32_2              ForQA             saed32rvt_ss0p95v125c
+adder32_3              ForQA             saed32rvt_ss0p95v125c
+adder32_4              8000              saed32rvt_ss0p95v125c
+adder32_5              8000              saed32rvt_ss0p95v125c
+adder32_6              8000              saed32rvt_ss0p95v125c
+adder32_7              ForQA             saed32rvt_ss0p95v125c
+adder32_8              8000              saed32rvt_ss0p95v125c
+adder32_9              ForQA             saed32rvt_ss0p95v125c
+adder32_10             ForQA             saed32rvt_ss0p95v125c
+adder32_11             8000              saed32rvt_ss0p95v125c
+adder32_12             8000              saed32rvt_ss0p95v125c
+adder32_13             ForQA             saed32rvt_ss0p95v125c
+adder32_14             ForQA             saed32rvt_ss0p95v125c
+adder32_15             ForQA             saed32rvt_ss0p95v125c
+adder32_16             8000              saed32rvt_ss0p95v125c
+adder32_17             ForQA             saed32rvt_ss0p95v125c
+adder32_18             ForQA             saed32rvt_ss0p95v125c
+adder32_19             8000              saed32rvt_ss0p95v125c
+adder32_20             ForQA             saed32rvt_ss0p95v125c
+adder32_21             8000              saed32rvt_ss0p95v125c
+adder32_22             8000              saed32rvt_ss0p95v125c
+adder32_23             8000              saed32rvt_ss0p95v125c
+adder32_24             ForQA             saed32rvt_ss0p95v125c
+adder32_25             8000              saed32rvt_ss0p95v125c
+adder32_26             8000              saed32rvt_ss0p95v125c
+adder32_27             8000              saed32rvt_ss0p95v125c
+adder32_28             ForQA             saed32rvt_ss0p95v125c
+adder32_29             ForQA             saed32rvt_ss0p95v125c
+adder32_30             ForQA             saed32rvt_ss0p95v125c
+adder32_31             ForQA             saed32rvt_ss0p95v125c
+adder32_32             8000              saed32rvt_ss0p95v125c
+adder32_33             8000              saed32rvt_ss0p95v125c
+adder32_34             8000              saed32rvt_ss0p95v125c
+adder32_35             ForQA             saed32rvt_ss0p95v125c
+adder32_36             8000              saed32rvt_ss0p95v125c
+adder32_37             8000              saed32rvt_ss0p95v125c
+adder32_38             8000              saed32rvt_ss0p95v125c
+adder32_39             ForQA             saed32rvt_ss0p95v125c
+adder32_40             8000              saed32rvt_ss0p95v125c
+adder32_41             8000              saed32rvt_ss0p95v125c
+adder32_42             ForQA             saed32rvt_ss0p95v125c
+adder32_43             8000              saed32rvt_ss0p95v125c
+adder32_44             ForQA             saed32rvt_ss0p95v125c
+adder32_45             ForQA             saed32rvt_ss0p95v125c
+adder32_46             ForQA             saed32rvt_ss0p95v125c
+adder32_47             8000              saed32rvt_ss0p95v125c
+adder32_48             8000              saed32rvt_ss0p95v125c
+adder32_49             8000              saed32rvt_ss0p95v125c
+adder32_50             ForQA             saed32rvt_ss0p95v125c
+adder32_51             8000              saed32rvt_ss0p95v125c
+adder32_52             ForQA             saed32rvt_ss0p95v125c
+adder32_53             8000              saed32rvt_ss0p95v125c
+adder32_54             8000              saed32rvt_ss0p95v125c
+adder32_55             8000              saed32rvt_ss0p95v125c
+adder32_56             ForQA             saed32rvt_ss0p95v125c
+adder32_57             8000              saed32rvt_ss0p95v125c
+adder32_58             ForQA             saed32rvt_ss0p95v125c
+adder32_59             8000              saed32rvt_ss0p95v125c
+adder32_60             ForQA             saed32rvt_ss0p95v125c
+adder32_61             8000              saed32rvt_ss0p95v125c
+adder32_62             8000              saed32rvt_ss0p95v125c
+adder32_63             ForQA             saed32rvt_ss0p95v125c
+adder32_64             ForQA             saed32rvt_ss0p95v125c
+adder32_65             8000              saed32rvt_ss0p95v125c
+adder32_66             8000              saed32rvt_ss0p95v125c
+adder32_67             8000              saed32rvt_ss0p95v125c
+adder32_68             8000              saed32rvt_ss0p95v125c
+adder32_69             8000              saed32rvt_ss0p95v125c
+adder32_70             8000              saed32rvt_ss0p95v125c
+adder32_71             8000              saed32rvt_ss0p95v125c
+adder32_72             8000              saed32rvt_ss0p95v125c
+adder32_73             8000              saed32rvt_ss0p95v125c
+adder32_74             8000              saed32rvt_ss0p95v125c
+adder32_75             8000              saed32rvt_ss0p95v125c
+adder32_76             8000              saed32rvt_ss0p95v125c
+adder32_77             8000              saed32rvt_ss0p95v125c
+adder32_78             8000              saed32rvt_ss0p95v125c
+adder32_79             8000              saed32rvt_ss0p95v125c
+adder32_80             8000              saed32rvt_ss0p95v125c
+adder32_81             8000              saed32rvt_ss0p95v125c
+adder32_82             8000              saed32rvt_ss0p95v125c
+adder32_83             8000              saed32rvt_ss0p95v125c
+adder32_84             8000              saed32rvt_ss0p95v125c
+adder32_85             8000              saed32rvt_ss0p95v125c
+adder32_86             8000              saed32rvt_ss0p95v125c
+adder32_87             8000              saed32rvt_ss0p95v125c
+adder32_88             8000              saed32rvt_ss0p95v125c
+adder32_89             8000              saed32rvt_ss0p95v125c
+adder32_90             8000              saed32rvt_ss0p95v125c
+adder32_91             8000              saed32rvt_ss0p95v125c
+adder32_92             8000              saed32rvt_ss0p95v125c
+adder32_93             8000              saed32rvt_ss0p95v125c
+adder32_94             8000              saed32rvt_ss0p95v125c
+adder32_95             8000              saed32rvt_ss0p95v125c
+adder32_96             8000              saed32rvt_ss0p95v125c
+adder32_97             8000              saed32rvt_ss0p95v125c
+adder32_98             8000              saed32rvt_ss0p95v125c
+adder32_99             8000              saed32rvt_ss0p95v125c
+adder32_100            8000              saed32rvt_ss0p95v125c
+adder32_101            8000              saed32rvt_ss0p95v125c
+adder32_102            8000              saed32rvt_ss0p95v125c
+adder32_103            8000              saed32rvt_ss0p95v125c
+adder32_104            8000              saed32rvt_ss0p95v125c
+adder32_105            8000              saed32rvt_ss0p95v125c
+adder32_106            8000              saed32rvt_ss0p95v125c
+adder32_107            8000              saed32rvt_ss0p95v125c
+adder32_108            8000              saed32rvt_ss0p95v125c
+adder32_109            8000              saed32rvt_ss0p95v125c
+adder32_110            8000              saed32rvt_ss0p95v125c
+adder32_111            8000              saed32rvt_ss0p95v125c
+adder32_112            8000              saed32rvt_ss0p95v125c
+adder32_113            8000              saed32rvt_ss0p95v125c
+adder32_114            8000              saed32rvt_ss0p95v125c
+adder32_115            8000              saed32rvt_ss0p95v125c
+adder32_116            8000              saed32rvt_ss0p95v125c
+adder32_117            8000              saed32rvt_ss0p95v125c
+adder32_118            8000              saed32rvt_ss0p95v125c
+adder32_119            8000              saed32rvt_ss0p95v125c
+adder32_120            8000              saed32rvt_ss0p95v125c
+adder32_121            8000              saed32rvt_ss0p95v125c
+adder32_122            8000              saed32rvt_ss0p95v125c
+adder32_123            8000              saed32rvt_ss0p95v125c
+adder32_124            8000              saed32rvt_ss0p95v125c
+adder32_125            8000              saed32rvt_ss0p95v125c
+adder32_126            8000              saed32rvt_ss0p95v125c
+adder32_127            8000              saed32rvt_ss0p95v125c
+adder32_128            8000              saed32rvt_ss0p95v125c
+adder32_129            8000              saed32rvt_ss0p95v125c
+adder32_130            8000              saed32rvt_ss0p95v125c
+adder32_131            8000              saed32rvt_ss0p95v125c
+adder32_132            8000              saed32rvt_ss0p95v125c
+adder32_133            8000              saed32rvt_ss0p95v125c
+adder32_134            8000              saed32rvt_ss0p95v125c
+adder32_135            8000              saed32rvt_ss0p95v125c
+adder32_136            8000              saed32rvt_ss0p95v125c
+adder32_137            8000              saed32rvt_ss0p95v125c
+adder32_138            8000              saed32rvt_ss0p95v125c
+adder32_139            8000              saed32rvt_ss0p95v125c
+adder32_140            8000              saed32rvt_ss0p95v125c
+adder32_141            8000              saed32rvt_ss0p95v125c
+adder32_142            8000              saed32rvt_ss0p95v125c
+adder32_143            8000              saed32rvt_ss0p95v125c
+parallelAdder_1        8000              saed32rvt_ss0p95v125c
+parallelAdder_2        8000              saed32rvt_ss0p95v125c
+parallelAdder_3        8000              saed32rvt_ss0p95v125c
+parallelAdder_4        8000              saed32rvt_ss0p95v125c
+parallelAdder_5        8000              saed32rvt_ss0p95v125c
+parallelAdder_6        8000              saed32rvt_ss0p95v125c
+parallelAdder_7        8000              saed32rvt_ss0p95v125c
+parallelAdder_8        8000              saed32rvt_ss0p95v125c
+parallelAdder_9        8000              saed32rvt_ss0p95v125c
+parallelAdder_10       8000              saed32rvt_ss0p95v125c
+parallelAdder_11       8000              saed32rvt_ss0p95v125c
+parallelAdder_12       8000              saed32rvt_ss0p95v125c
+parallelAdder_13       8000              saed32rvt_ss0p95v125c
+parallelAdder_14       8000              saed32rvt_ss0p95v125c
+parallelAdder_15       8000              saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_1
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_2
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_3
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_4
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_5
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_6
+                       140000            saed32rvt_ss0p95v125c
+sram_top_DW64_MW8_AW15_7
+                       140000            saed32rvt_ss0p95v125c
+icb_ctrl_mas_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+icb_ctrl_mas_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+weight_distribution_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_1_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_1_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_2_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_2_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_3_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_3_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_4_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_4_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_5_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_5_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_6_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_6_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_7_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_7_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_0_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+accumulator_0_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+counterGroup_1_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+counterGroup_1_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+fifo_1_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_1_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+fifo_2_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_2_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+counterGroup_2_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+counterGroup_2_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+fifo_3_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_3_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+fifo_4_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_4_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+counterGroup_3_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+counterGroup_3_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+fifo_5_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_5_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+fifo_6_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_6_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+counterGroup_0_DW01_inc_0
+                       ForQA             saed32rvt_ss0p95v125c
+counterGroup_0_DW01_inc_1
+                       ForQA             saed32rvt_ss0p95v125c
+fifo_7_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_7_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+fifo_0_DW01_inc_0      ForQA             saed32rvt_ss0p95v125c
+fifo_0_DW01_inc_1      ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_55_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_55_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_54_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_54_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_53_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_53_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_52_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_52_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_51_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_51_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_50_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_50_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_49_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_49_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_64_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_64_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_63_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_63_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_62_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_62_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_61_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_61_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_60_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_60_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_59_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_59_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_58_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_58_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_57_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_57_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_56_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_56_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_39_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_39_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_38_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_38_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_37_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_37_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_36_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_36_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_35_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_35_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_34_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_34_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_33_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_33_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_48_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_48_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_47_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_47_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_46_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_46_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_45_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_45_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_44_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_44_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_43_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_43_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_42_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_42_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_41_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_41_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_40_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_40_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_23_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_23_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_22_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_22_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_21_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_21_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_20_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_20_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_19_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_19_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_18_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_18_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_17_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_17_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_32_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_32_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_31_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_31_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_30_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_30_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_29_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_29_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_28_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_28_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_27_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_27_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_26_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_26_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_25_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_25_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_24_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_24_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_7_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_7_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_6_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_6_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_5_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_5_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_4_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_4_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_3_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_3_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_2_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_2_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_1_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_1_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_16_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_16_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_15_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_15_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_14_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_14_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_13_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_13_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_12_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_12_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_11_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_11_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_10_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_10_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_9_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_9_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_8_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_8_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_69_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_69_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_78_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_78_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_87_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_87_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_96_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_96_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_72_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_72_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_81_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_81_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_90_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_90_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_99_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_99_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_66_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_66_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_71_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_71_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_73_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_73_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_75_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_75_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_80_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_80_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_82_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_82_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_84_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_84_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_89_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_89_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_91_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_91_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_93_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_93_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_98_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_98_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_0_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_0_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_65_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_65_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_67_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_67_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_68_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_68_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_70_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_70_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_74_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_74_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_76_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_76_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_77_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_77_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_79_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_79_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_83_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_83_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_85_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_85_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_86_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_86_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_88_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_88_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_92_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_92_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_94_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_94_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_95_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_95_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+multiplier8bit_97_DW02_mult_0
+                       8000              saed32rvt_ss0p95v125c
+multiplier8bit_97_DW01_add_0
+                       ForQA             saed32rvt_ss0p95v125c
+adder32_110_DW01_add_J4_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_107_DW01_add_J5_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_104_DW01_add_2 8000              saed32rvt_ss0p95v125c
+adder32_101_DW01_add_J6_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_98_DW01_add_J4_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_95_DW01_add_J6_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_92_DW01_add_J5_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_89_DW01_add_2  8000              saed32rvt_ss0p95v125c
+adder32_86_DW01_add_J4_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_83_DW01_add_2  8000              saed32rvt_ss0p95v125c
+adder32_80_DW01_add_J6_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_77_DW01_add_J5_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_74_DW01_add_2  8000              saed32rvt_ss0p95v125c
+adder32_71_DW01_add_J4_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_68_DW01_add_J6_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_65_DW01_add_J5_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_137_DW01_add_J4_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_129_DW01_add_2 8000              saed32rvt_ss0p95v125c
+adder32_121_DW01_add_J6_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_113_DW01_add_J5_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_140_DW01_add_J7_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_139_DW01_add_J8_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_138_DW01_add_2 8000              saed32rvt_ss0p95v125c
+adder32_132_DW01_add_J9_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_131_DW01_add_J8_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_130_DW01_add_2 8000              saed32rvt_ss0p95v125c
+adder32_124_DW01_add_J7_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_123_DW01_add_J9_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_122_DW01_add_J8_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_116_DW01_add_2 8000              saed32rvt_ss0p95v125c
+adder32_115_DW01_add_J7_1
+                       8000              saed32rvt_ss0p95v125c
+adder32_114_DW01_add_J9_1
+                       8000              saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  97.8886 mW  (100%)
+  Net Switching Power  = 303.8553 uW    (0%)
+                         ---------
+Total Dynamic Power    =  98.1924 mW  (100%)
+
+Cell Leakage Power     =  17.9458 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory         4.4898e+04           27.1431        8.9019e+08        4.5815e+04  (  39.45%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       5.2767e+04           43.3015        9.8361e+09        6.2646e+04  (  53.94%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    230.9047          233.4075        7.2184e+09        7.6828e+03  (   6.61%)
+--------------------------------------------------------------------------------------------------
+Total          9.7896e+04 uW       303.8521 uW     1.7945e+10 pW     1.1614e+05 uW
+1

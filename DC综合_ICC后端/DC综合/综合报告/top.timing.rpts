@@ -1,0 +1,324 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: H-2013.03-SP2
+Date   : Mon Jul  5 16:47:59 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: top_acce_0/weight_distribution_0/batch_33_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/out16bit_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                16000                 saed32rvt_ss0p95v125c
+  weight_distribution
+                     140000                saed32rvt_ss0p95v125c
+  top_acce           2000000               saed32rvt_ss0p95v125c
+  multiplier8bit_84  8000                  saed32rvt_ss0p95v125c
+  multiplier8bit_84_DW02_mult_0
+                     8000                  saed32rvt_ss0p95v125c
+  multiplier8bit_84_DW01_add_0
+                     ForQA                 saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  top_acce_0/weight_distribution_0/batch_33_reg[0]/CLK (DFFARX2_RVT)
+                                                          0.00 #     0.00 r
+  top_acce_0/weight_distribution_0/batch_33_reg[0]/QN (DFFARX2_RVT)
+                                                          0.18       0.18 r
+  top_acce_0/weight_distribution_0/U157/Y (INVX2_RVT)     0.03       0.20 f
+  top_acce_0/weight_distribution_0/U3173/Y (NAND3X0_RVT)
+                                                          0.04       0.24 r
+  top_acce_0/weight_distribution_0/U948/Y (IBUFFX16_RVT)
+                                                          0.08       0.32 f
+  top_acce_0/weight_distribution_0/U4131/Y (INVX16_RVT)
+                                                          0.02       0.34 r
+  top_acce_0/weight_distribution_0/U3919/Y (NBUFFX2_RVT)
+                                                          0.05       0.40 r
+  top_acce_0/weight_distribution_0/U1681/Y (OA22X1_RVT)
+                                                          0.08       0.48 r
+  top_acce_0/weight_distribution_0/U1676/Y (NAND4X0_RVT)
+                                                          0.05       0.53 f
+  top_acce_0/weight_distribution_0/w33_2_8[7] (weight_distribution)
+                                                          0.00       0.53 f
+  top_acce_0/conv_2/weight8[7] (conv_3)                   0.00       0.53 f
+  top_acce_0/conv_2/multiplierBar_0/w8[7] (multiplierBar_3)
+                                                          0.00       0.53 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/in2[7] (multiplier8bit_84)
+                                                          0.00       0.53 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/U3/Y (NBUFFX2_RVT)
+                                                          0.07       0.60 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/B[7] (multiplier8bit_84_DW02_mult_0)
+                                                          0.00       0.60 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U15/Y (INVX2_RVT)
+                                                          0.04       0.63 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U96/Y (NOR2X0_RVT)
+                                                          0.08       0.72 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U14/Y (XOR2X2_RVT)
+                                                          0.10       0.82 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/S2_2_5/S (FADDX1_RVT)
+                                                          0.14       0.96 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U10/Y (NAND2X0_RVT)
+                                                          0.04       1.00 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U12/Y (NAND3X0_RVT)
+                                                          0.07       1.06 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/S2_4_4/S (FADDX1_RVT)
+                                                          0.16       1.22 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/S2_5_3/S (FADDX1_RVT)
+                                                          0.15       1.37 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/S2_6_2/S (FADDX1_RVT)
+                                                          0.15       1.52 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/S4_1/S (FADDX1_RVT)
+                                                          0.15       1.66 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/U13/Y (XOR2X2_RVT)
+                                                          0.10       1.76 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/A[6] (multiplier8bit_84_DW01_add_0)
+                                                          0.00       1.76 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U8/Y (AND2X1_RVT)
+                                                          0.06       1.82 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U30/Y (OR2X1_RVT)
+                                                          0.05       1.88 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U29/Y (AO22X1_RVT)
+                                                          0.07       1.95 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U27/Y (AOI21X1_RVT)
+                                                          0.10       2.05 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U25/Y (OA21X1_RVT)
+                                                          0.07       2.12 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U20/Y (OA21X1_RVT)
+                                                          0.08       2.21 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U18/Y (OA21X1_RVT)
+                                                          0.07       2.27 f
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/U6/Y (XOR3X2_RVT)
+                                                          0.07       2.34 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1/SUM[12] (multiplier8bit_84_DW01_add_0)
+                                                          0.00       2.34 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/PRODUCT[14] (multiplier8bit_84_DW02_mult_0)
+                                                          0.00       2.34 r
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/out16bit_reg[14]/D (DFFARX1_RVT)
+                                                          0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/out16bit_reg[14]/CLK (DFFARX1_RVT)
+                                                          0.00       2.40 r
+  library setup time                                     -0.06       2.34
+  data required time                                                 2.34
+  --------------------------------------------------------------------------
+  data required time                                                 2.34
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_icb_cmd_valid
+              (input port clocked by clk)
+  Endpoint: i_icb_cmd_ready
+            (output port clocked by clk)
+  Path Group: in2out
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                16000                 saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 f
+  i_icb_cmd_valid (in)                                    0.00       0.20 f
+  icb_ctrl_sla_0/sla_icb_cmd_valid (icb_ctrl_sla)         0.00       0.20 f
+  icb_ctrl_sla_0/sla_icb_cmd_ready (icb_ctrl_sla)         0.00       0.20 f
+  i_icb_cmd_ready (out)                                   0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  output external delay                                  -0.20       2.20
+  data required time                                                 2.20
+  --------------------------------------------------------------------------
+  data required time                                                 2.20
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.00
+
+
+  Startpoint: m_icb_rsp_rdata[0]
+              (input port clocked by clk)
+  Endpoint: top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/out16bit_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: in2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                16000                 saed32rvt_ss0p95v125c
+  conv_1             70000                 saed32rvt_ss0p95v125c
+  multiplier8bit_73_DW02_mult_0
+                     8000                  saed32rvt_ss0p95v125c
+  multiplier8bit_73_DW01_add_0
+                     ForQA                 saed32rvt_ss0p95v125c
+  multiplier8bit_73  8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 f
+  m_icb_rsp_rdata[0] (in)                                 0.02       0.22 f
+  icb_ctrl_mas_0/mas_icb_rsp_rdata[0] (icb_ctrl_mas)      0.00       0.22 f
+  icb_ctrl_mas_0/data_to_acce[0] (icb_ctrl_mas)           0.00       0.22 f
+  top_acce_0/data_i[0] (top_acce)                         0.00       0.22 f
+  top_acce_0/conv_4/data_i[0] (conv_1)                    0.00       0.22 f
+  top_acce_0/conv_4/PE1/data_i[0] (PE_9)                  0.00       0.22 f
+  top_acce_0/conv_4/PE1/mux2_0/in2[0] (mux2_9)            0.00       0.22 f
+  top_acce_0/conv_4/PE1/mux2_0/U1/Y (AND2X1_RVT)          0.08       0.30 f
+  top_acce_0/conv_4/PE1/mux2_0/out[0] (mux2_9)            0.00       0.30 f
+  top_acce_0/conv_4/PE1/data_pe2multipleBar[0] (PE_9)     0.00       0.30 f
+  top_acce_0/conv_4/multiplierBar_0/in1[0] (multiplierBar_1)
+                                                          0.00       0.30 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/in1[0] (multiplier8bit_73)
+                                                          0.00       0.30 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/A[0] (multiplier8bit_73_DW02_mult_0)
+                                                          0.00       0.30 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U107/Y (NOR2X0_RVT)
+                                                          0.08       0.38 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U7/Y (XOR2X1_RVT)
+                                                          0.12       0.50 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U19/Y (NAND2X0_RVT)
+                                                          0.05       0.54 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U21/Y (NAND3X0_RVT)
+                                                          0.07       0.62 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/S2_3_5/S (FADDX1_RVT)
+                                                          0.16       0.78 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U10/Y (XOR3X2_RVT)
+                                                          0.08       0.86 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/S2_5_3/S (FADDX1_RVT)
+                                                          0.15       1.01 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/S2_6_2/S (FADDX1_RVT)
+                                                          0.15       1.16 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/S4_1/S (FADDX1_RVT)
+                                                          0.15       1.31 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/U26/Y (XOR2X2_RVT)
+                                                          0.11       1.42 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/A[6] (multiplier8bit_73_DW01_add_0)
+                                                          0.00       1.42 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U6/Y (AND2X1_RVT)
+                                                          0.06       1.48 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U28/Y (OR2X1_RVT)
+                                                          0.05       1.53 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U27/Y (AO22X1_RVT)
+                                                          0.06       1.59 f
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U25/Y (AOI21X1_RVT)
+                                                          0.10       1.69 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U23/Y (OA21X1_RVT)
+                                                          0.08       1.77 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U18/Y (OA21X1_RVT)
+                                                          0.08       1.85 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U16/Y (OA21X1_RVT)
+                                                          0.07       1.92 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/U5/Y (XNOR3X1_RVT)
+                                                          0.08       2.00 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1/SUM[12] (multiplier8bit_73_DW01_add_0)
+                                                          0.00       2.00 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/PRODUCT[14] (multiplier8bit_73_DW02_mult_0)
+                                                          0.00       2.00 r
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/out16bit_reg[14]/D (DFFARX1_RVT)
+                                                          0.00       2.00 r
+  data arrival time                                                  2.00
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/out16bit_reg[14]/CLK (DFFARX1_RVT)
+                                                          0.00       2.40 r
+  library setup time                                     -0.06       2.34
+  data required time                                                 2.34
+  --------------------------------------------------------------------------
+  data required time                                                 2.34
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+  Startpoint: top_acce_0/conv_post_0/sramArray_0/accumulator_3/sram0/sram_4kx64_u1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m_icb_cmd_wdata[1]
+            (output port clocked by clk)
+  Path Group: reg2out
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                16000                 saed32rvt_ss0p95v125c
+  sramArray          1000000               saed32rvt_ss0p95v125c
+  mux8               8000                  saed32rvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  top_acce_0/conv_post_0/sramArray_0/accumulator_3/sram0/sram_4kx64_u1/CLK (sram_4kx64)
+                                                          0.00 #     0.00 r
+  top_acce_0/conv_post_0/sramArray_0/accumulator_3/sram0/sram_4kx64_u1/Q[1] (sram_4kx64)
+                                                          1.89       1.89 f
+  top_acce_0/conv_post_0/sramArray_0/accumulator_3/sram0/dout[1] (sram_top_DW64_MW8_AW15_6)
+                                                          0.00       1.89 f
+  top_acce_0/conv_post_0/sramArray_0/accumulator_3/data_o[1] (accumulator_6)
+                                                          0.00       1.89 f
+  top_acce_0/conv_post_0/sramArray_0/mux8_0/in_3[1] (mux8)
+                                                          0.00       1.89 f
+  top_acce_0/conv_post_0/sramArray_0/mux8_0/U3/Y (NAND3X0_RVT)
+                                                          0.03       1.92 r
+  top_acce_0/conv_post_0/sramArray_0/mux8_0/U182/Y (NAND4X0_RVT)
+                                                          0.06       1.98 f
+  top_acce_0/conv_post_0/sramArray_0/mux8_0/U187/Y (OR2X1_RVT)
+                                                          0.07       2.05 f
+  top_acce_0/conv_post_0/sramArray_0/mux8_0/out[1] (mux8)
+                                                          0.00       2.05 f
+  top_acce_0/conv_post_0/sramArray_0/mux2_64bit_0/in2[1] (mux2_64bit)
+                                                          0.00       2.05 f
+  top_acce_0/conv_post_0/sramArray_0/mux2_64bit_0/U10/Y (AO22X1_RVT)
+                                                          0.06       2.11 f
+  top_acce_0/conv_post_0/sramArray_0/mux2_64bit_0/out[1] (mux2_64bit)
+                                                          0.00       2.11 f
+  top_acce_0/conv_post_0/sramArray_0/data_o[1] (sramArray)
+                                                          0.00       2.11 f
+  top_acce_0/conv_post_0/data_o_4[1] (conv_post)          0.00       2.11 f
+  top_acce_0/data_o[1] (top_acce)                         0.00       2.11 f
+  icb_ctrl_mas_0/data_from_acce[1] (icb_ctrl_mas)         0.00       2.11 f
+  icb_ctrl_mas_0/mas_icb_cmd_wdata[1] (icb_ctrl_mas)      0.00       2.11 f
+  m_icb_cmd_wdata[1] (out)                                0.00       2.11 f
+  data arrival time                                                  2.11
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.10       2.40
+  output external delay                                  -0.20       2.20
+  data required time                                                 2.20
+  --------------------------------------------------------------------------
+  data required time                                                 2.20
+  data arrival time                                                 -2.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+1

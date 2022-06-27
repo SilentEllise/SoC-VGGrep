@@ -1,0 +1,1315 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: H-2013.03-SP2
+Date   : Mon Jul  5 16:47:49 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/riscv/library/dc/saed32rvt_ss0p95v125c.db)
+    sram_4kx64_ss_0p99v_0p99v_125c (File: /home/riscv/library/dc/sram_4kx64_ss_0p99v_0p99v_125c.db)
+
+Number of ports:                          215
+Number of nets:                           247
+Number of cells:                            3
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:             194751.055739
+Buf/Inv area:                    15580.298215
+Noncombinational area:          144395.982352
+Macro/Black Box area:           799990.187500
+Net Interconnect area:          103758.995582
+
+Total cell area:               1139137.225591
+Total area:                    1242896.221173
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                  Local cell area
+                                  ---------------------  ------------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black-
+                                  Total         Total    national     national     boxes        Design
+--------------------------------  ------------  -------  -----------  -----------  -----------  ------------------------------
+top                               1139137.2256    100.0       0.0000       0.0000       0.0000  top
+icb_ctrl_mas_0                        532.9400      0.0     187.3041     241.9451       0.0000  icb_ctrl_mas
+icb_ctrl_mas_0/add_106                 51.8454      0.0      51.8454       0.0000       0.0000  icb_ctrl_mas_DW01_inc_1
+icb_ctrl_mas_0/add_153                 51.8454      0.0      51.8454       0.0000       0.0000  icb_ctrl_mas_DW01_inc_0
+icb_ctrl_sla_0                         82.5968      0.0      68.3647      14.2321       0.0000  icb_ctrl_sla
+top_acce_0                        1138521.6888     99.9      11.9448       0.0000       0.0000  top_acce
+top_acce_0/ReLU_0                     274.4755      0.0      68.1106     206.3649       0.0000  ReLU
+top_acce_0/conv_1                   43148.0601      3.8       4.0663       0.0000       0.0000  conv_0
+top_acce_0/conv_1/PE1                 100.1327      0.0      24.9061      56.9283       0.0000  PE_0
+top_acce_0/conv_1/PE1/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_0
+top_acce_0/conv_1/PE2                  98.0996      0.0      24.9061      56.9283       0.0000  PE_35
+top_acce_0/conv_1/PE2/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_35
+top_acce_0/conv_1/PE3                 101.9117      0.0      24.9061      56.9283       0.0000  PE_34
+top_acce_0/conv_1/PE3/mux2_0           20.0774      0.0      20.0774       0.0000       0.0000  mux2_34
+top_acce_0/conv_1/PE4                 101.9117      0.0      24.9061      56.9283       0.0000  PE_33
+top_acce_0/conv_1/PE4/mux2_0           20.0774      0.0      20.0774       0.0000       0.0000  mux2_33
+top_acce_0/conv_1/PE5                  98.0996      0.0      24.9061      56.9283       0.0000  PE_32
+top_acce_0/conv_1/PE5/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_32
+top_acce_0/conv_1/PE6                 102.6742      0.0      24.9061      56.9283       0.0000  PE_31
+top_acce_0/conv_1/PE6/mux2_0           20.8398      0.0      20.8398       0.0000       0.0000  mux2_31
+top_acce_0/conv_1/PE7                 100.6410      0.0      24.9061      56.9283       0.0000  PE_30
+top_acce_0/conv_1/PE7/mux2_0           18.8067      0.0      18.8067       0.0000       0.0000  mux2_30
+top_acce_0/conv_1/PE8                  98.0996      0.0      24.9061      56.9283       0.0000  PE_29
+top_acce_0/conv_1/PE8/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_29
+top_acce_0/conv_1/PE9                  18.8067      0.0       0.0000       0.0000       0.0000  PE_28
+top_acce_0/conv_1/PE9/mux2_0           18.8067      0.0      18.8067       0.0000       0.0000  mux2_28
+top_acce_0/conv_1/counterGroup_0      470.9288      0.0     227.4589     199.2489       0.0000  counterGroup_0
+top_acce_0/conv_1/counterGroup_0/add_101
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_0_DW01_inc_0
+top_acce_0/conv_1/counterGroup_0/add_75
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_0_DW01_inc_1
+top_acce_0/conv_1/fifo1             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_0
+top_acce_0/conv_1/fifo1/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_0_DW01_inc_1
+top_acce_0/conv_1/fifo1/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_0_DW01_inc_0
+top_acce_0/conv_1/fifo2             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_7
+top_acce_0/conv_1/fifo2/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_7_DW01_inc_1
+top_acce_0/conv_1/fifo2/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_7_DW01_inc_0
+top_acce_0/conv_1/multiplierBar_0   10234.6331      0.9       4.0663      28.4641       0.0000  multiplierBar_0
+top_acce_0/conv_1/multiplierBar_0/adderTree_0
+                                     4212.9451      0.4       3.8122     320.2214       0.0000  adderTree_0
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_1_0
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_0
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_1_1
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_143
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_1_2
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_142
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_1_3
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_141
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_2_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_140
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_2_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_140_DW01_add_J7_1
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_2_1
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_139
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_2_1/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_139_DW01_add_J8_1
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_3_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_138
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_3_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_138_DW01_add_2
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_4_0
+                                      287.6910      0.0       0.0000      56.9283       0.0000  adder32_137
+top_acce_0/conv_1/multiplierBar_0/adderTree_0/adder32_4_0/add_32
+                                      230.7628      0.0     230.7628       0.0000       0.0000  adder32_137_DW01_add_J4_1
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_1
+                                      656.9622      0.1       6.0995     106.7405       0.0000  multiplier8bit_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_1/mult_34
+                                      544.1223      0.0     462.7962       0.0000       0.0000  multiplier8bit_0_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_1/mult_34/FS_1
+                                       81.3261      0.0      81.3261       0.0000       0.0000  multiplier8bit_0_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_2
+                                      654.4208      0.1       6.0995     106.7405       0.0000  multiplier8bit_99
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_2/mult_34
+                                      541.5809      0.0     463.3045       0.0000       0.0000  multiplier8bit_99_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_2/mult_34/FS_1
+                                       78.2764      0.0      78.2764       0.0000       0.0000  multiplier8bit_99_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_3
+                                      659.7578      0.1       4.0663     106.7405       0.0000  multiplier8bit_98
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_3/mult_34
+                                      548.9510      0.0     468.1332       0.0000       0.0000  multiplier8bit_98_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_3/mult_34/FS_1
+                                       80.8178      0.0      80.8178       0.0000       0.0000  multiplier8bit_98_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_4
+                                      672.9733      0.1       4.0663     106.7405       0.0000  multiplier8bit_97
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_4/mult_34
+                                      562.1665      0.0     475.2493       0.0000       0.0000  multiplier8bit_97_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_4/mult_34/FS_1
+                                       86.9172      0.0      86.9172       0.0000       0.0000  multiplier8bit_97_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_5
+                                      646.0340      0.1       6.0995     106.7405       0.0000  multiplier8bit_96
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_5/mult_34
+                                      533.1941      0.0     454.6636       0.0000       0.0000  multiplier8bit_96_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_5/mult_34/FS_1
+                                       78.5305      0.0      78.5305       0.0000       0.0000  multiplier8bit_96_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_6
+                                      705.7579      0.1       4.0663     106.7405       0.0000  multiplier8bit_95
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_6/mult_34
+                                      594.9511      0.1     504.9841       0.0000       0.0000  multiplier8bit_95_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_6/mult_34/FS_1
+                                       89.9670      0.0      89.9670       0.0000       0.0000  multiplier8bit_95_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_7
+                                      659.2495      0.1       6.0995     106.7405       0.0000  multiplier8bit_94
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_7/mult_34
+                                      546.4096      0.0     465.0835       0.0000       0.0000  multiplier8bit_94_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_7/mult_34/FS_1
+                                       81.3261      0.0      81.3261       0.0000       0.0000  multiplier8bit_94_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_8
+                                      683.3932      0.1       6.0995     106.7405       0.0000  multiplier8bit_93
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_8/mult_34
+                                      570.5533      0.1     484.6526       0.0000       0.0000  multiplier8bit_93_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_8/mult_34/FS_1
+                                       85.9007      0.0      85.9007       0.0000       0.0000  multiplier8bit_93_DW01_add_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_9
+                                      650.6086      0.1       4.0663     106.7405       0.0000  multiplier8bit_92
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_9/mult_34
+                                      539.8019      0.0     454.4095       0.0000       0.0000  multiplier8bit_92_DW02_mult_0
+top_acce_0/conv_1/multiplierBar_0/multiplier8bit_9/mult_34/FS_1
+                                       85.3924      0.0      85.3924       0.0000       0.0000  multiplier8bit_92_DW01_add_0
+top_acce_0/conv_2                   42983.1207      3.8       4.0663       0.0000       0.0000  conv_3
+top_acce_0/conv_2/PE1                 100.8952      0.0      24.9061      56.9283       0.0000  PE_27
+top_acce_0/conv_2/PE1/mux2_0           19.0608      0.0      19.0608       0.0000       0.0000  mux2_27
+top_acce_0/conv_2/PE2                  98.0996      0.0      24.9061      56.9283       0.0000  PE_26
+top_acce_0/conv_2/PE2/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_26
+top_acce_0/conv_2/PE3                 100.1327      0.0      24.9061      56.9283       0.0000  PE_25
+top_acce_0/conv_2/PE3/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_25
+top_acce_0/conv_2/PE4                 100.1327      0.0      24.9061      56.9283       0.0000  PE_24
+top_acce_0/conv_2/PE4/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_24
+top_acce_0/conv_2/PE5                  98.0996      0.0      24.9061      56.9283       0.0000  PE_23
+top_acce_0/conv_2/PE5/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_23
+top_acce_0/conv_2/PE6                  98.0996      0.0      24.9061      56.9283       0.0000  PE_22
+top_acce_0/conv_2/PE6/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_22
+top_acce_0/conv_2/PE7                  98.0996      0.0      24.9061      56.9283       0.0000  PE_21
+top_acce_0/conv_2/PE7/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_21
+top_acce_0/conv_2/PE8                  98.0996      0.0      24.9061      56.9283       0.0000  PE_20
+top_acce_0/conv_2/PE8/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_20
+top_acce_0/conv_2/PE9                  16.2652      0.0       0.0000       0.0000       0.0000  PE_19
+top_acce_0/conv_2/PE9/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_19
+top_acce_0/conv_2/counterGroup_0      377.6580      0.0     184.0003     149.4367       0.0000  counterGroup_3
+top_acce_0/conv_2/counterGroup_0/add_101
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_3_DW01_inc_0
+top_acce_0/conv_2/counterGroup_0/add_75
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_3_DW01_inc_1
+top_acce_0/conv_2/fifo1             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_6
+top_acce_0/conv_2/fifo1/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_6_DW01_inc_1
+top_acce_0/conv_2/fifo1/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_6_DW01_inc_0
+top_acce_0/conv_2/fifo2             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_5
+top_acce_0/conv_2/fifo2/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_5_DW01_inc_1
+top_acce_0/conv_2/fifo2/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_5_DW01_inc_0
+top_acce_0/conv_2/multiplierBar_0   10175.4175      0.9       4.0663       0.0000       0.0000  multiplierBar_3
+top_acce_0/conv_2/multiplierBar_0/adderTree_0
+                                     4212.9451      0.4       3.8122     320.2214       0.0000  adderTree_3
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_1_0
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_136
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_1_1
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_135
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_1_2
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_134
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_1_3
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_133
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_2_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_132
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_2_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_132_DW01_add_J9_1
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_2_1
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_131
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_2_1/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_131_DW01_add_J8_1
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_3_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_130
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_3_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_130_DW01_add_2
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_4_0
+                                      287.6910      0.0       0.0000      56.9283       0.0000  adder32_129
+top_acce_0/conv_2/multiplierBar_0/adderTree_0/adder32_4_0/add_32
+                                      230.7628      0.0     230.7628       0.0000       0.0000  adder32_129_DW01_add_2
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_1
+                                      657.4705      0.1       4.0663     106.7405       0.0000  multiplier8bit_91
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_1/mult_34
+                                      546.6637      0.0     467.8791       0.0000       0.0000  multiplier8bit_91_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_1/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_91_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_2
+                                      649.3379      0.1       6.6077     106.7405       0.0000  multiplier8bit_90
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_2/mult_34
+                                      535.9897      0.0     454.4095       0.0000       0.0000  multiplier8bit_90_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_2/mult_34/FS_1
+                                       81.5802      0.0      81.5802       0.0000       0.0000  multiplier8bit_90_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_3
+                                      670.6860      0.1       4.0663     106.7405       0.0000  multiplier8bit_89
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_3/mult_34
+                                      559.8792      0.0     476.0117       0.0000       0.0000  multiplier8bit_89_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_3/mult_34/FS_1
+                                       83.8675      0.0      83.8675       0.0000       0.0000  multiplier8bit_89_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_4
+                                      667.1280      0.1       4.0663     106.7405       0.0000  multiplier8bit_88
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_4/mult_34
+                                      556.3212      0.0     462.7962       0.0000       0.0000  multiplier8bit_88_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_4/mult_34/FS_1
+                                       93.5250      0.0      93.5250       0.0000       0.0000  multiplier8bit_88_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_5
+                                      653.4042      0.1       4.0663     106.7405       0.0000  multiplier8bit_87
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_5/mult_34
+                                      542.5974      0.0     458.7299       0.0000       0.0000  multiplier8bit_87_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_5/mult_34/FS_1
+                                       83.8675      0.0      83.8675       0.0000       0.0000  multiplier8bit_87_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_6
+                                      680.3435      0.1       4.0663     106.7405       0.0000  multiplier8bit_86
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_6/mult_34
+                                      569.5367      0.0     479.3156       0.0000       0.0000  multiplier8bit_86_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_6/mult_34/FS_1
+                                       90.2211      0.0      90.2211       0.0000       0.0000  multiplier8bit_86_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_7
+                                      648.8296      0.1       4.0663     106.7405       0.0000  multiplier8bit_85
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_7/mult_34
+                                      538.0228      0.0     456.6968       0.0000       0.0000  multiplier8bit_85_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_7/mult_34/FS_1
+                                       81.3261      0.0      81.3261       0.0000       0.0000  multiplier8bit_85_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8
+                                      661.0285      0.1       6.0995     106.7405       0.0000  multiplier8bit_84
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34
+                                      548.1886      0.0     461.7796       0.0000       0.0000  multiplier8bit_84_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_8/mult_34/FS_1
+                                       86.4090      0.0      86.4090       0.0000       0.0000  multiplier8bit_84_DW01_add_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_9
+                                      670.1777      0.1       4.0663     106.7405       0.0000  multiplier8bit_83
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_9/mult_34
+                                      559.3709      0.0     469.1498       0.0000       0.0000  multiplier8bit_83_DW02_mult_0
+top_acce_0/conv_2/multiplierBar_0/multiplier8bit_9/mult_34/FS_1
+                                       90.2211      0.0      90.2211       0.0000       0.0000  multiplier8bit_83_DW01_add_0
+top_acce_0/conv_3                   43024.8003      3.8       4.0663       0.0000       0.0000  conv_2
+top_acce_0/conv_3/PE1                  98.3537      0.0      24.9061      56.9283       0.0000  PE_18
+top_acce_0/conv_3/PE1/mux2_0           16.5194      0.0      16.5194       0.0000       0.0000  mux2_18
+top_acce_0/conv_3/PE2                  98.0996      0.0      24.9061      56.9283       0.0000  PE_17
+top_acce_0/conv_3/PE2/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_17
+top_acce_0/conv_3/PE3                  98.0996      0.0      24.9061      56.9283       0.0000  PE_16
+top_acce_0/conv_3/PE3/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_16
+top_acce_0/conv_3/PE4                 100.1327      0.0      24.9061      56.9283       0.0000  PE_15
+top_acce_0/conv_3/PE4/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_15
+top_acce_0/conv_3/PE5                  98.0996      0.0      24.9061      56.9283       0.0000  PE_14
+top_acce_0/conv_3/PE5/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_14
+top_acce_0/conv_3/PE6                 100.6410      0.0      24.9061      56.9283       0.0000  PE_13
+top_acce_0/conv_3/PE6/mux2_0           18.8067      0.0      18.8067       0.0000       0.0000  mux2_13
+top_acce_0/conv_3/PE7                 101.9117      0.0      24.9061      56.9283       0.0000  PE_12
+top_acce_0/conv_3/PE7/mux2_0           20.0774      0.0      20.0774       0.0000       0.0000  mux2_12
+top_acce_0/conv_3/PE8                  98.0996      0.0      24.9061      56.9283       0.0000  PE_11
+top_acce_0/conv_3/PE8/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_11
+top_acce_0/conv_3/PE9                  18.8067      0.0       0.0000       0.0000       0.0000  PE_10
+top_acce_0/conv_3/PE9/mux2_0           18.8067      0.0      18.8067       0.0000       0.0000  mux2_10
+top_acce_0/conv_3/counterGroup_0      385.5365      0.0     191.8787     149.4367       0.0000  counterGroup_2
+top_acce_0/conv_3/counterGroup_0/add_101
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_2_DW01_inc_0
+top_acce_0/conv_3/counterGroup_0/add_75
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_2_DW01_inc_1
+top_acce_0/conv_3/fifo1             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_4
+top_acce_0/conv_3/fifo1/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_4_DW01_inc_1
+top_acce_0/conv_3/fifo1/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_4_DW01_inc_0
+top_acce_0/conv_3/fifo2             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_3
+top_acce_0/conv_3/fifo2/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_3_DW01_inc_1
+top_acce_0/conv_3/fifo2/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_3_DW01_inc_0
+top_acce_0/conv_3/multiplierBar_0   10204.8982      0.9       6.0995       0.0000       0.0000  multiplierBar_2
+top_acce_0/conv_3/multiplierBar_0/adderTree_0
+                                     4212.9451      0.4       3.8122     320.2214       0.0000  adderTree_2
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_1_0
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_128
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_1_1
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_127
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_1_2
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_126
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_1_3
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_125
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_2_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_124
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_2_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_124_DW01_add_J7_1
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_2_1
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_123
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_2_1/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_123_DW01_add_J9_1
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_3_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_122
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_3_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_122_DW01_add_J8_1
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_4_0
+                                      287.6910      0.0       0.0000      56.9283       0.0000  adder32_121
+top_acce_0/conv_3/multiplierBar_0/adderTree_0/adder32_4_0/add_32
+                                      230.7628      0.0     230.7628       0.0000       0.0000  adder32_121_DW01_add_J6_1
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_1
+                                      689.7468      0.1       4.0663     106.7405       0.0000  multiplier8bit_82
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_1/mult_34
+                                      578.9400      0.1     471.6913       0.0000       0.0000  multiplier8bit_82_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_1/mult_34/FS_1
+                                      107.2488      0.0     107.2488       0.0000       0.0000  multiplier8bit_82_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_2
+                                      657.7247      0.1       6.0995     106.7405       0.0000  multiplier8bit_81
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_2/mult_34
+                                      544.8847      0.0     463.8128       0.0000       0.0000  multiplier8bit_81_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_2/mult_34/FS_1
+                                       81.0719      0.0      81.0719       0.0000       0.0000  multiplier8bit_81_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_3
+                                      656.1998      0.1       4.0663     106.7405       0.0000  multiplier8bit_80
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_3/mult_34
+                                      545.3930      0.0     466.6084       0.0000       0.0000  multiplier8bit_80_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_3/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_80_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_4
+                                      669.1612      0.1       4.0663     106.7405       0.0000  multiplier8bit_79
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_4/mult_34
+                                      558.3544      0.0     479.5697       0.0000       0.0000  multiplier8bit_79_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_4/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_79_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_5
+                                      648.0672      0.1       4.0663     106.7405       0.0000  multiplier8bit_78
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_5/mult_34
+                                      537.2604      0.0     458.9841       0.0000       0.0000  multiplier8bit_78_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_5/mult_34/FS_1
+                                       78.2764      0.0      78.2764       0.0000       0.0000  multiplier8bit_78_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_6
+                                      679.3269      0.1       4.0663     106.7405       0.0000  multiplier8bit_77
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_6/mult_34
+                                      568.5201      0.0     482.3653       0.0000       0.0000  multiplier8bit_77_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_6/mult_34/FS_1
+                                       86.1548      0.0      86.1548       0.0000       0.0000  multiplier8bit_77_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_7
+                                      654.6749      0.1       4.0663     106.7405       0.0000  multiplier8bit_76
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_7/mult_34
+                                      543.8682      0.0     465.0835       0.0000       0.0000  multiplier8bit_76_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_7/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_76_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_8
+                                      666.1114      0.1       4.0663     106.7405       0.0000  multiplier8bit_75
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_8/mult_34
+                                      555.3046      0.0     474.4868       0.0000       0.0000  multiplier8bit_75_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_8/mult_34/FS_1
+                                       80.8178      0.0      80.8178       0.0000       0.0000  multiplier8bit_75_DW01_add_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_9
+                                      664.8407      0.1       6.8619     106.7405       0.0000  multiplier8bit_74
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_9/mult_34
+                                      551.2383      0.0     472.4537       0.0000       0.0000  multiplier8bit_74_DW02_mult_0
+top_acce_0/conv_3/multiplierBar_0/multiplier8bit_9/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_74_DW01_add_0
+top_acce_0/conv_4                   43048.1815      3.8       4.0663       0.0000       0.0000  conv_1
+top_acce_0/conv_4/PE1                  98.0996      0.0      24.9061      56.9283       0.0000  PE_9
+top_acce_0/conv_4/PE1/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_9
+top_acce_0/conv_4/PE2                  98.0996      0.0      24.9061      56.9283       0.0000  PE_8
+top_acce_0/conv_4/PE2/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_8
+top_acce_0/conv_4/PE3                 100.1327      0.0      24.9061      56.9283       0.0000  PE_7
+top_acce_0/conv_4/PE3/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_7
+top_acce_0/conv_4/PE4                 100.1327      0.0      24.9061      56.9283       0.0000  PE_6
+top_acce_0/conv_4/PE4/mux2_0           18.2984      0.0      18.2984       0.0000       0.0000  mux2_6
+top_acce_0/conv_4/PE5                  98.0996      0.0      24.9061      56.9283       0.0000  PE_5
+top_acce_0/conv_4/PE5/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_5
+top_acce_0/conv_4/PE6                  98.3537      0.0      24.9061      56.9283       0.0000  PE_4
+top_acce_0/conv_4/PE6/mux2_0           16.5194      0.0      16.5194       0.0000       0.0000  mux2_4
+top_acce_0/conv_4/PE7                  98.0996      0.0      24.9061      56.9283       0.0000  PE_3
+top_acce_0/conv_4/PE7/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_3
+top_acce_0/conv_4/PE8                  98.0996      0.0      24.9061      56.9283       0.0000  PE_2
+top_acce_0/conv_4/PE8/mux2_0           16.2652      0.0      16.2652       0.0000       0.0000  mux2_2
+top_acce_0/conv_4/PE9                  18.8067      0.0       0.0000       0.0000       0.0000  PE_1
+top_acce_0/conv_4/PE9/mux2_0           18.8067      0.0      18.8067       0.0000       0.0000  mux2_1
+top_acce_0/conv_4/counterGroup_0      389.3486      0.0     195.6909     149.4367       0.0000  counterGroup_1
+top_acce_0/conv_4/counterGroup_0/add_101
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_1_DW01_inc_0
+top_acce_0/conv_4/counterGroup_0/add_75
+                                       22.1105      0.0      22.1105       0.0000       0.0000  counterGroup_1_DW01_inc_1
+top_acce_0/conv_4/fifo1             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_2
+top_acce_0/conv_4/fifo1/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_2_DW01_inc_1
+top_acce_0/conv_4/fifo1/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_2_DW01_inc_0
+top_acce_0/conv_4/fifo2             15809.0275      1.4    8959.8467    6804.9598       0.0000  fifo_1
+top_acce_0/conv_4/fifo2/add_41         22.1105      0.0      22.1105       0.0000       0.0000  fifo_1_DW01_inc_1
+top_acce_0/conv_4/fifo2/add_45         22.1105      0.0      22.1105       0.0000       0.0000  fifo_1_DW01_inc_0
+top_acce_0/conv_4/multiplierBar_0   10228.7877      0.9       4.0663       0.0000       0.0000  multiplierBar_1
+top_acce_0/conv_4/multiplierBar_0/adderTree_0
+                                     4212.9451      0.4       3.8122     320.2214       0.0000  adderTree_1
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_1_0
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_120
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_1_1
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_119
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_1_2
+                                      389.3486      0.0     161.6356     227.7130       0.0000  adder32_118
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_1_3
+                                      380.4536      0.0     152.7405     227.7130       0.0000  adder32_117
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_2_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_116
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_2_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_116_DW01_add_2
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_2_1
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_115
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_2_1/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_115_DW01_add_J7_1
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_3_0
+                                      687.2054      0.1       6.0995     227.7130       0.0000  adder32_114
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_3_0/add_32
+                                      453.3929      0.0     453.3929       0.0000       0.0000  adder32_114_DW01_add_J9_1
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_4_0
+                                      287.6910      0.0       0.0000      56.9283       0.0000  adder32_113
+top_acce_0/conv_4/multiplierBar_0/adderTree_0/adder32_4_0/add_32
+                                      230.7628      0.0     230.7628       0.0000       0.0000  adder32_113_DW01_add_J5_1
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1
+                                      669.9236      0.1       4.0663     106.7405       0.0000  multiplier8bit_73
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34
+                                      559.1168      0.0     478.2990       0.0000       0.0000  multiplier8bit_73_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_1/mult_34/FS_1
+                                       80.8178      0.0      80.8178       0.0000       0.0000  multiplier8bit_73_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_2
+                                      658.4871      0.1       6.0995     106.7405       0.0000  multiplier8bit_72
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_2/mult_34
+                                      545.6472      0.0     469.4040       0.0000       0.0000  multiplier8bit_72_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_2/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_72_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_3
+                                      671.7026      0.1       4.0663     106.7405       0.0000  multiplier8bit_71
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_3/mult_34
+                                      560.8958      0.0     482.1112       0.0000       0.0000  multiplier8bit_71_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_3/mult_34/FS_1
+                                       78.7846      0.0      78.7846       0.0000       0.0000  multiplier8bit_71_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_4
+                                      663.5700      0.1       4.0663     106.7405       0.0000  multiplier8bit_70
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_4/mult_34
+                                      552.7632      0.0     460.5089       0.0000       0.0000  multiplier8bit_70_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_4/mult_34/FS_1
+                                       92.2543      0.0      92.2543       0.0000       0.0000  multiplier8bit_70_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_5
+                                      667.3821      0.1       4.0663     106.7405       0.0000  multiplier8bit_69
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_5/mult_34
+                                      556.5754      0.0     472.9620       0.0000       0.0000  multiplier8bit_69_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_5/mult_34/FS_1
+                                       83.6134      0.0      83.6134       0.0000       0.0000  multiplier8bit_69_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_6
+                                      688.4761      0.1       4.0663     106.7405       0.0000  multiplier8bit_68
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_6/mult_34
+                                      577.6693      0.1     489.4813       0.0000       0.0000  multiplier8bit_68_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_6/mult_34/FS_1
+                                       88.1880      0.0      88.1880       0.0000       0.0000  multiplier8bit_68_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_7
+                                      664.5866      0.1       6.0995     106.7405       0.0000  multiplier8bit_67
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_7/mult_34
+                                      551.7466      0.0     463.5587       0.0000       0.0000  multiplier8bit_67_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_7/mult_34/FS_1
+                                       88.1880      0.0      88.1880       0.0000       0.0000  multiplier8bit_67_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_8
+                                      667.8904      0.1       4.0663     106.7405       0.0000  multiplier8bit_66
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_8/mult_34
+                                      557.0836      0.0     476.5200       0.0000       0.0000  multiplier8bit_66_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_8/mult_34/FS_1
+                                       80.5636      0.0      80.5636       0.0000       0.0000  multiplier8bit_66_DW01_add_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_9
+                                      659.7578      0.1       6.0995     106.7405       0.0000  multiplier8bit_65
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_9/mult_34
+                                      546.9179      0.0     453.3929       0.0000       0.0000  multiplier8bit_65_DW02_mult_0
+top_acce_0/conv_4/multiplierBar_0/multiplier8bit_9/mult_34/FS_1
+                                       93.5250      0.0      93.5250       0.0000       0.0000  multiplier8bit_65_DW01_add_0
+top_acce_0/conv_post_0             892987.5773     78.4       2.0332       0.0000       0.0000  conv_post
+top_acce_0/conv_post_0/crossBar_0   19065.3748      1.7      16.7735      14.2321       0.0000  crossBar
+top_acce_0/conv_post_0/crossBar_0/adder4_A
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_0
+top_acce_0/conv_post_0/crossBar_0/adder4_A/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_112
+top_acce_0/conv_post_0/crossBar_0/adder4_A/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_111
+top_acce_0/conv_post_0/crossBar_0/adder4_A/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_110
+top_acce_0/conv_post_0/crossBar_0/adder4_A/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_110_DW01_add_J4_1
+top_acce_0/conv_post_0/crossBar_0/adder4_B
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_15
+top_acce_0/conv_post_0/crossBar_0/adder4_B/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_109
+top_acce_0/conv_post_0/crossBar_0/adder4_B/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_108
+top_acce_0/conv_post_0/crossBar_0/adder4_B/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_107
+top_acce_0/conv_post_0/crossBar_0/adder4_B/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_107_DW01_add_J5_1
+top_acce_0/conv_post_0/crossBar_0/adder4_C
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_14
+top_acce_0/conv_post_0/crossBar_0/adder4_C/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_106
+top_acce_0/conv_post_0/crossBar_0/adder4_C/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_105
+top_acce_0/conv_post_0/crossBar_0/adder4_C/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_104
+top_acce_0/conv_post_0/crossBar_0/adder4_C/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_104_DW01_add_2
+top_acce_0/conv_post_0/crossBar_0/adder4_D
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_13
+top_acce_0/conv_post_0/crossBar_0/adder4_D/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_103
+top_acce_0/conv_post_0/crossBar_0/adder4_D/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_102
+top_acce_0/conv_post_0/crossBar_0/adder4_D/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_101
+top_acce_0/conv_post_0/crossBar_0/adder4_D/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_101_DW01_add_J6_1
+top_acce_0/conv_post_0/crossBar_0/adder4_E
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_12
+top_acce_0/conv_post_0/crossBar_0/adder4_E/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_100
+top_acce_0/conv_post_0/crossBar_0/adder4_E/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_99
+top_acce_0/conv_post_0/crossBar_0/adder4_E/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_98
+top_acce_0/conv_post_0/crossBar_0/adder4_E/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_98_DW01_add_J4_1
+top_acce_0/conv_post_0/crossBar_0/adder4_F
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_11
+top_acce_0/conv_post_0/crossBar_0/adder4_F/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_97
+top_acce_0/conv_post_0/crossBar_0/adder4_F/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_96
+top_acce_0/conv_post_0/crossBar_0/adder4_F/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_95
+top_acce_0/conv_post_0/crossBar_0/adder4_F/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_95_DW01_add_J6_1
+top_acce_0/conv_post_0/crossBar_0/adder4_G
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_10
+top_acce_0/conv_post_0/crossBar_0/adder4_G/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_94
+top_acce_0/conv_post_0/crossBar_0/adder4_G/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_93
+top_acce_0/conv_post_0/crossBar_0/adder4_G/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_92
+top_acce_0/conv_post_0/crossBar_0/adder4_G/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_92_DW01_add_J5_1
+top_acce_0/conv_post_0/crossBar_0/adder4_H
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_9
+top_acce_0/conv_post_0/crossBar_0/adder4_H/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_91
+top_acce_0/conv_post_0/crossBar_0/adder4_H/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_90
+top_acce_0/conv_post_0/crossBar_0/adder4_H/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_89
+top_acce_0/conv_post_0/crossBar_0/adder4_H/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_89_DW01_add_2
+top_acce_0/conv_post_0/crossBar_0/adder4_I
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_8
+top_acce_0/conv_post_0/crossBar_0/adder4_I/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_88
+top_acce_0/conv_post_0/crossBar_0/adder4_I/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_87
+top_acce_0/conv_post_0/crossBar_0/adder4_I/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_86
+top_acce_0/conv_post_0/crossBar_0/adder4_I/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_86_DW01_add_J4_1
+top_acce_0/conv_post_0/crossBar_0/adder4_J
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_7
+top_acce_0/conv_post_0/crossBar_0/adder4_J/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_85
+top_acce_0/conv_post_0/crossBar_0/adder4_J/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_84
+top_acce_0/conv_post_0/crossBar_0/adder4_J/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_83
+top_acce_0/conv_post_0/crossBar_0/adder4_J/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_83_DW01_add_2
+top_acce_0/conv_post_0/crossBar_0/adder4_K
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_6
+top_acce_0/conv_post_0/crossBar_0/adder4_K/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_82
+top_acce_0/conv_post_0/crossBar_0/adder4_K/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_81
+top_acce_0/conv_post_0/crossBar_0/adder4_K/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_80
+top_acce_0/conv_post_0/crossBar_0/adder4_K/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_80_DW01_add_J6_1
+top_acce_0/conv_post_0/crossBar_0/adder4_L
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_5
+top_acce_0/conv_post_0/crossBar_0/adder4_L/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_79
+top_acce_0/conv_post_0/crossBar_0/adder4_L/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_78
+top_acce_0/conv_post_0/crossBar_0/adder4_L/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_77
+top_acce_0/conv_post_0/crossBar_0/adder4_L/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_77_DW01_add_J5_1
+top_acce_0/conv_post_0/crossBar_0/adder4_M
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_4
+top_acce_0/conv_post_0/crossBar_0/adder4_M/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_76
+top_acce_0/conv_post_0/crossBar_0/adder4_M/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_75
+top_acce_0/conv_post_0/crossBar_0/adder4_M/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_74
+top_acce_0/conv_post_0/crossBar_0/adder4_M/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_74_DW01_add_2
+top_acce_0/conv_post_0/crossBar_0/adder4_N
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_3
+top_acce_0/conv_post_0/crossBar_0/adder4_N/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_73
+top_acce_0/conv_post_0/crossBar_0/adder4_N/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_72
+top_acce_0/conv_post_0/crossBar_0/adder4_N/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_71
+top_acce_0/conv_post_0/crossBar_0/adder4_N/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_71_DW01_add_J4_1
+top_acce_0/conv_post_0/crossBar_0/adder4_O
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_2
+top_acce_0/conv_post_0/crossBar_0/adder4_O/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_70
+top_acce_0/conv_post_0/crossBar_0/adder4_O/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_69
+top_acce_0/conv_post_0/crossBar_0/adder4_O/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_68
+top_acce_0/conv_post_0/crossBar_0/adder4_O/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_68_DW01_add_J6_1
+top_acce_0/conv_post_0/crossBar_0/adder4_P
+                                     1189.6481      0.1       0.0000       0.0000       0.0000  adder4_1
+top_acce_0/conv_post_0/crossBar_0/adder4_P/adder32_1_0
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_67
+top_acce_0/conv_post_0/crossBar_0/adder4_P/adder32_1_1
+                                      436.3653      0.0     208.6522     227.7130       0.0000  adder32_66
+top_acce_0/conv_post_0/crossBar_0/adder4_P/adder32_2
+                                      316.9176      0.0       0.0000      56.9283       0.0000  adder32_65
+top_acce_0/conv_post_0/crossBar_0/adder4_P/adder32_2/add_32
+                                      259.9893      0.0     259.9893       0.0000       0.0000  adder32_65_DW01_add_J5_1
+top_acce_0/conv_post_0/multiplierGroup_1
+                                     9135.4602      0.8      50.5747       7.1160       0.0000  multiplierGroup_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_A
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_64
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_A/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_64_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_A/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_64_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_B
+                                      573.3489      0.1       4.0663     106.7405       0.0000  multiplier8bit_63
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_B/mult_34
+                                      462.5421      0.0     384.7740       0.0000       0.0000  multiplier8bit_63_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_B/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_63_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_C
+                                      570.8074      0.1       4.0663     106.7405       0.0000  multiplier8bit_62
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_C/mult_34
+                                      460.0006      0.0     381.7243       0.0000       0.0000  multiplier8bit_62_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_C/mult_34/FS_1
+                                       78.2764      0.0      78.2764       0.0000       0.0000  multiplier8bit_62_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_D
+                                      572.3323      0.1       4.0663     106.7405       0.0000  multiplier8bit_61
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_D/mult_34
+                                      461.5255      0.0     382.2326       0.0000       0.0000  multiplier8bit_61_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_D/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_61_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_E
+                                      564.7080      0.0       4.0663     106.7405       0.0000  multiplier8bit_60
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_E/mult_34
+                                      453.9012      0.0     377.4038       0.0000       0.0000  multiplier8bit_60_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_E/mult_34/FS_1
+                                       76.4973      0.0      76.4973       0.0000       0.0000  multiplier8bit_60_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_F
+                                      562.4207      0.0       4.0663     106.7405       0.0000  multiplier8bit_59
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_F/mult_34
+                                      451.6139      0.0     375.3707       0.0000       0.0000  multiplier8bit_59_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_F/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_59_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_G
+                                      562.4207      0.0       4.0663     106.7405       0.0000  multiplier8bit_58
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_G/mult_34
+                                      451.6139      0.0     375.3707       0.0000       0.0000  multiplier8bit_58_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_G/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_58_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_H
+                                      564.7080      0.0       4.0663     106.7405       0.0000  multiplier8bit_57
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_H/mult_34
+                                      453.9012      0.0     377.4038       0.0000       0.0000  multiplier8bit_57_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_H/mult_34/FS_1
+                                       76.4973      0.0      76.4973       0.0000       0.0000  multiplier8bit_57_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_I
+                                      562.4207      0.0       4.0663     106.7405       0.0000  multiplier8bit_56
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_I/mult_34
+                                      451.6139      0.0     375.3707       0.0000       0.0000  multiplier8bit_56_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_I/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_56_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_J
+                                      564.4538      0.0       4.0663     106.7405       0.0000  multiplier8bit_55
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_J/mult_34
+                                      453.6470      0.0     375.1165       0.0000       0.0000  multiplier8bit_55_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_J/mult_34/FS_1
+                                       78.5305      0.0      78.5305       0.0000       0.0000  multiplier8bit_55_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_K
+                                      564.4538      0.0       4.0663     106.7405       0.0000  multiplier8bit_54
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_K/mult_34
+                                      453.6470      0.0     375.1165       0.0000       0.0000  multiplier8bit_54_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_K/mult_34/FS_1
+                                       78.5305      0.0      78.5305       0.0000       0.0000  multiplier8bit_54_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_L
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_53
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_L/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_53_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_L/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_53_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_M
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_52
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_M/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_52_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_M/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_52_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_N
+                                      570.8074      0.1       4.0663     106.7405       0.0000  multiplier8bit_51
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_N/mult_34
+                                      460.0006      0.0     379.4370       0.0000       0.0000  multiplier8bit_51_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_N/mult_34/FS_1
+                                       80.5636      0.0      80.5636       0.0000       0.0000  multiplier8bit_51_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_O
+                                      572.3323      0.1       4.0663     106.7405       0.0000  multiplier8bit_50
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_O/mult_34
+                                      461.5255      0.0     382.2326       0.0000       0.0000  multiplier8bit_50_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_O/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_50_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_P
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_49
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_P/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_49_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_1/multiplier8bit_P/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_49_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2
+                                     9165.4492      0.8      50.5747       0.0000       0.0000  multiplierGroup_3
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_A
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_48
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_A/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_48_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_A/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_48_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_B
+                                      570.8074      0.1       4.0663     106.7405       0.0000  multiplier8bit_47
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_B/mult_34
+                                      460.0006      0.0     381.4701       0.0000       0.0000  multiplier8bit_47_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_B/mult_34/FS_1
+                                       78.5305      0.0      78.5305       0.0000       0.0000  multiplier8bit_47_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_C
+                                      573.3489      0.1       4.0663     106.7405       0.0000  multiplier8bit_46
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_C/mult_34
+                                      462.5421      0.0     384.7740       0.0000       0.0000  multiplier8bit_46_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_C/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_46_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_D
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_45
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_D/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_45_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_D/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_45_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_E
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_44
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_E/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_44_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_E/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_44_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_F
+                                      568.7743      0.0       6.0995     106.7405       0.0000  multiplier8bit_43
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_F/mult_34
+                                      455.9343      0.0     375.6248       0.0000       0.0000  multiplier8bit_43_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_F/mult_34/FS_1
+                                       80.3095      0.0      80.3095       0.0000       0.0000  multiplier8bit_43_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_G
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_42
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_G/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_42_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_G/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_42_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_H
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_41
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_H/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_41_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_H/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_41_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_I
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_40
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_I/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_40_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_I/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_40_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_J
+                                      572.3323      0.1       4.0663     106.7405       0.0000  multiplier8bit_39
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_J/mult_34
+                                      461.5255      0.0     382.2326       0.0000       0.0000  multiplier8bit_39_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_J/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_39_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_K
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_38
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_K/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_38_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_K/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_38_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_L
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_37
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_L/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_37_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_L/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_37_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_M
+                                      570.0450      0.1       4.0663     106.7405       0.0000  multiplier8bit_36
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_M/mult_34
+                                      459.2382      0.0     381.2160       0.0000       0.0000  multiplier8bit_36_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_M/mult_34/FS_1
+                                       78.0222      0.0      78.0222       0.0000       0.0000  multiplier8bit_36_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_N
+                                      573.3489      0.1       4.0663     106.7405       0.0000  multiplier8bit_35
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_N/mult_34
+                                      462.5421      0.0     384.7740       0.0000       0.0000  multiplier8bit_35_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_N/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_35_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_O
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_34
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_O/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_34_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_O/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_34_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_P
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_33
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_P/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_33_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_2/multiplier8bit_P/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_33_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3
+                                     9176.6316      0.8      50.5747       0.0000       0.0000  multiplierGroup_2
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_A
+                                      568.2660      0.0       6.0995     106.7405       0.0000  multiplier8bit_32
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_A/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_32_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_A/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_32_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_B
+                                      568.2660      0.0       6.6077     106.7405       0.0000  multiplier8bit_31
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_B/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_31_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_B/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_31_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_C
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_30
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_C/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_30_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_C/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_30_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_D
+                                      562.1665      0.0       4.0663     106.7405       0.0000  multiplier8bit_29
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_D/mult_34
+                                      451.3597      0.0     375.3707       0.0000       0.0000  multiplier8bit_29_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_D/mult_34/FS_1
+                                       75.9891      0.0      75.9891       0.0000       0.0000  multiplier8bit_29_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_E
+                                      568.7743      0.0       6.0995     106.7405       0.0000  multiplier8bit_28
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_E/mult_34
+                                      455.9343      0.0     375.3707       0.0000       0.0000  multiplier8bit_28_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_E/mult_34/FS_1
+                                       80.5636      0.0      80.5636       0.0000       0.0000  multiplier8bit_28_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_F
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_27
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_F/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_27_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_F/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_27_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_G
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_26
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_G/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_26_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_G/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_26_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_H
+                                      572.0781      0.1       4.0663     106.7405       0.0000  multiplier8bit_25
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_H/mult_34
+                                      461.2714      0.0     383.5033       0.0000       0.0000  multiplier8bit_25_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_H/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_25_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_I
+                                      570.2991      0.1       6.6077     106.7405       0.0000  multiplier8bit_24
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_I/mult_34
+                                      456.9509      0.0     376.8956       0.0000       0.0000  multiplier8bit_24_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_I/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_24_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_J
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_23
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_J/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_23_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_J/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_23_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_K
+                                      580.9732      0.1       4.0663     106.7405       0.0000  multiplier8bit_22
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_K/mult_34
+                                      470.1664      0.0     379.6911       0.0000       0.0000  multiplier8bit_22_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_K/mult_34/FS_1
+                                       90.4753      0.0      90.4753       0.0000       0.0000  multiplier8bit_22_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_L
+                                      566.4870      0.0       6.0995     106.7405       0.0000  multiplier8bit_21
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_L/mult_34
+                                      453.6470      0.0     375.6248       0.0000       0.0000  multiplier8bit_21_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_L/mult_34/FS_1
+                                       78.0222      0.0      78.0222       0.0000       0.0000  multiplier8bit_21_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_M
+                                      567.7577      0.0       6.0995     106.7405       0.0000  multiplier8bit_20
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_M/mult_34
+                                      454.9178      0.0     375.6248       0.0000       0.0000  multiplier8bit_20_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_M/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_20_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_N
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_19
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_N/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_19_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_N/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_19_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_O
+                                      566.9953      0.0       4.0663     106.7405       0.0000  multiplier8bit_18
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_O/mult_34
+                                      456.1885      0.0     375.6248       0.0000       0.0000  multiplier8bit_18_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_O/mult_34/FS_1
+                                       80.5636      0.0      80.5636       0.0000       0.0000  multiplier8bit_18_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_P
+                                      574.6196      0.1       4.0663     106.7405       0.0000  multiplier8bit_17
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_P/mult_34
+                                      463.8128      0.0     386.0447       0.0000       0.0000  multiplier8bit_17_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_3/multiplier8bit_P/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_17_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4
+                                     9168.2448      0.8      50.5747       0.0000       0.0000  multiplierGroup_1
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_A
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_16
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_A/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_16_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_A/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_16_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_B
+                                      572.3323      0.1       4.0663     106.7405       0.0000  multiplier8bit_15
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_B/mult_34
+                                      461.5255      0.0     382.2326       0.0000       0.0000  multiplier8bit_15_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_B/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_15_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_C
+                                      570.8074      0.1       4.0663     106.7405       0.0000  multiplier8bit_14
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_C/mult_34
+                                      460.0006      0.0     381.7243       0.0000       0.0000  multiplier8bit_14_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_C/mult_34/FS_1
+                                       78.2764      0.0      78.2764       0.0000       0.0000  multiplier8bit_14_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_D
+                                      571.3157      0.1       6.0995     106.7405       0.0000  multiplier8bit_13
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_D/mult_34
+                                      458.4758      0.0     379.1828       0.0000       0.0000  multiplier8bit_13_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_D/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_13_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_E
+                                      573.3489      0.1       4.0663     106.7405       0.0000  multiplier8bit_12
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_E/mult_34
+                                      462.5421      0.0     384.7740       0.0000       0.0000  multiplier8bit_12_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_E/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_12_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_F
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_11
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_F/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_11_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_F/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_11_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_G
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_10
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_G/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_10_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_G/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_10_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_H
+                                      572.3323      0.1       4.0663     106.7405       0.0000  multiplier8bit_9
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_H/mult_34
+                                      461.5255      0.0     382.2326       0.0000       0.0000  multiplier8bit_9_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_H/mult_34/FS_1
+                                       79.2929      0.0      79.2929       0.0000       0.0000  multiplier8bit_9_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_I
+                                      568.7743      0.0       6.0995     106.7405       0.0000  multiplier8bit_8
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_I/mult_34
+                                      455.9343      0.0     375.6248       0.0000       0.0000  multiplier8bit_8_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_I/mult_34/FS_1
+                                       80.3095      0.0      80.3095       0.0000       0.0000  multiplier8bit_8_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_J
+                                      572.8406      0.1       4.0663     106.7405       0.0000  multiplier8bit_7
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_J/mult_34
+                                      462.0338      0.0     384.0116       0.0000       0.0000  multiplier8bit_7_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_J/mult_34/FS_1
+                                       78.0222      0.0      78.0222       0.0000       0.0000  multiplier8bit_7_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_K
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_6
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_K/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_6_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_K/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_6_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_L
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_5
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_L/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_5_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_L/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_5_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_M
+                                      573.3489      0.1       4.0663     106.7405       0.0000  multiplier8bit_4
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_M/mult_34
+                                      462.5421      0.0     384.7740       0.0000       0.0000  multiplier8bit_4_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_M/mult_34/FS_1
+                                       77.7681      0.0      77.7681       0.0000       0.0000  multiplier8bit_4_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_N
+                                      568.7743      0.0       6.0995     106.7405       0.0000  multiplier8bit_3
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_N/mult_34
+                                      455.9343      0.0     375.6248       0.0000       0.0000  multiplier8bit_3_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_N/mult_34/FS_1
+                                       80.3095      0.0      80.3095       0.0000       0.0000  multiplier8bit_3_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_O
+                                      566.2328      0.0       4.0663     106.7405       0.0000  multiplier8bit_2
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_O/mult_34
+                                      455.4260      0.0     379.1828       0.0000       0.0000  multiplier8bit_2_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_O/mult_34/FS_1
+                                       76.2432      0.0      76.2432       0.0000       0.0000  multiplier8bit_2_DW01_add_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_P
+                                      568.7743      0.0       6.6077     106.7405       0.0000  multiplier8bit_1
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_P/mult_34
+                                      455.4260      0.0     375.3707       0.0000       0.0000  multiplier8bit_1_DW02_mult_0
+top_acce_0/conv_post_0/multiplierGroup_4/multiplier8bit_P/mult_34/FS_1
+                                       80.0554      0.0      80.0554       0.0000       0.0000  multiplier8bit_1_DW01_add_0
+top_acce_0/conv_post_0/sramArray_0
+                                   837274.3835     73.5     109.0278     491.0062       0.0000  sramArray
+top_acce_0/conv_post_0/sramArray_0/accumulator_1
+                                   102656.8656      9.0     324.2877     519.9786       0.0000  accumulator_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_0_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_0_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_1
+                                      802.3326      0.1       2.5414       0.0000       0.0000  parallelAdder_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_1/adder32_1
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_64
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_1/adder32_2
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_63
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_1/adder32_3
+                                      200.0113      0.0     143.0831      56.9283       0.0000  adder32_62
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_1/adder32_4
+                                      201.5362      0.0     144.6079      56.9283       0.0000  adder32_61
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_2
+                                      802.0785      0.1       2.5414       0.0000       0.0000  parallelAdder_15
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_2/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_60
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_2/adder32_2
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_59
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_2/adder32_3
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_58
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/parallelAdder_2/adder32_4
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_57
+top_acce_0/conv_post_0/sramArray_0/accumulator_1/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_2
+                                   102660.4236      9.0     324.2877     519.4703       0.0000  accumulator_7
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_7_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_7_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_1
+                                      806.1448      0.1       2.5414       0.0000       0.0000  parallelAdder_14
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_1/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_56
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_1/adder32_2
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_55
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_1/adder32_3
+                                      201.5362      0.0     144.6079      56.9283       0.0000  adder32_54
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_1/adder32_4
+                                      201.5362      0.0     144.6079      56.9283       0.0000  adder32_53
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_2
+                                      802.3326      0.1       2.5414       0.0000       0.0000  parallelAdder_13
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_2/adder32_1
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_52
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_2/adder32_2
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_51
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_2/adder32_3
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_50
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/parallelAdder_2/adder32_4
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_49
+top_acce_0/conv_post_0/sramArray_0/accumulator_2/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_7
+top_acce_0/conv_post_0/sramArray_0/accumulator_3
+                                   102660.1694      9.0     324.2877     519.4703       0.0000  accumulator_6
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_6_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_6_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_1
+                                      803.6033      0.1       2.5414       0.0000       0.0000  parallelAdder_12
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_1/adder32_1
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_48
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_1/adder32_2
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_47
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_1/adder32_3
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_46
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_1/adder32_4
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_45
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_2
+                                      804.6199      0.1       2.5414       0.0000       0.0000  parallelAdder_11
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_2/adder32_1
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_44
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_2/adder32_2
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_43
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_2/adder32_3
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_42
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/parallelAdder_2/adder32_4
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_41
+top_acce_0/conv_post_0/sramArray_0/accumulator_3/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_6
+top_acce_0/conv_post_0/sramArray_0/accumulator_4
+                                   102661.6943      9.0     324.2877     519.4703       0.0000  accumulator_5
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_5_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_5_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_1
+                                      803.8575      0.1       2.5414       0.0000       0.0000  parallelAdder_10
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_1/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_40
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_1/adder32_2
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_39
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_1/adder32_3
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_38
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_1/adder32_4
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_37
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_2
+                                      805.8906      0.1       2.5414       0.0000       0.0000  parallelAdder_9
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_2/adder32_1
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_36
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_2/adder32_2
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_35
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_2/adder32_3
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_34
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/parallelAdder_2/adder32_4
+                                      201.7903      0.0     144.8621      56.9283       0.0000  adder32_33
+top_acce_0/conv_post_0/sramArray_0/accumulator_4/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_5
+top_acce_0/conv_post_0/sramArray_0/accumulator_5
+                                   102656.3573      9.0     324.2877     519.4703       0.0000  accumulator_4
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_4_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_4_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_1
+                                      800.8077      0.1       2.5414       0.0000       0.0000  parallelAdder_8
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_1/adder32_1
+                                      201.5362      0.0     144.6079      56.9283       0.0000  adder32_32
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_1/adder32_2
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_31
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_1/adder32_3
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_30
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_1/adder32_4
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_29
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_2
+                                      803.6033      0.1       2.5414       0.0000       0.0000  parallelAdder_7
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_2/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_28
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_2/adder32_2
+                                      200.0113      0.0     143.0831      56.9283       0.0000  adder32_27
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_2/adder32_3
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_26
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/parallelAdder_2/adder32_4
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_25
+top_acce_0/conv_post_0/sramArray_0/accumulator_5/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_4
+top_acce_0/conv_post_0/sramArray_0/accumulator_6
+                                   102658.3904      9.0     324.2877     519.4703       0.0000  accumulator_3
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_3_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_3_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_1
+                                      804.3658      0.1       2.5414       0.0000       0.0000  parallelAdder_6
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_1/adder32_1
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_24
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_1/adder32_2
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_23
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_1/adder32_3
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_22
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_1/adder32_4
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_21
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_2
+                                      802.0785      0.1       2.5414       0.0000       0.0000  parallelAdder_5
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_2/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_20
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_2/adder32_2
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_19
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_2/adder32_3
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_18
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/parallelAdder_2/adder32_4
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_17
+top_acce_0/conv_post_0/sramArray_0/accumulator_6/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_3
+top_acce_0/conv_post_0/sramArray_0/accumulator_7
+                                   102656.6114      9.0     324.2877     519.4703       0.0000  accumulator_2
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_2_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_2_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_1
+                                      803.3492      0.1       2.5414       0.0000       0.0000  parallelAdder_4
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_1/adder32_1
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_16
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_1/adder32_2
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_15
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_1/adder32_3
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_14
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_1/adder32_4
+                                      199.5030      0.0     142.5748      56.9283       0.0000  adder32_13
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_2
+                                      801.3160      0.1       2.5414       0.0000       0.0000  parallelAdder_3
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_2/adder32_1
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_12
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_2/adder32_2
+                                      201.5362      0.0     144.6079      56.9283       0.0000  adder32_11
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_2/adder32_3
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_10
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/parallelAdder_2/adder32_4
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_9
+top_acce_0/conv_post_0/sramArray_0/accumulator_7/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_2
+top_acce_0/conv_post_0/sramArray_0/accumulator_8
+                                   102659.1529      9.0     324.2877     519.4703       0.0000  accumulator_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/add_79
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_1_DW01_inc_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/add_97
+                                      104.7073      0.0     104.7073       0.0000       0.0000  accumulator_1_DW01_inc_0
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_1
+                                      806.1448      0.1       2.5414       0.0000       0.0000  parallelAdder_2
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_1/adder32_1
+                                      200.7738      0.0     143.8455      56.9283       0.0000  adder32_8
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_1/adder32_2
+                                      200.2655      0.0     143.3372      56.9283       0.0000  adder32_7
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_1/adder32_3
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_6
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_1/adder32_4
+                                      201.2820      0.0     144.3538      56.9283       0.0000  adder32_5
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_2
+                                      801.0619      0.1       2.5414       0.0000       0.0000  parallelAdder_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_2/adder32_1
+                                      200.5196      0.0     143.5914      56.9283       0.0000  adder32_4
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_2/adder32_2
+                                      198.4865      0.0     141.5582      56.9283       0.0000  adder32_3
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_2/adder32_3
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_2
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/parallelAdder_2/adder32_4
+                                      199.7572      0.0     142.8289      56.9283       0.0000  adder32_1
+top_acce_0/conv_post_0/sramArray_0/accumulator_8/sram0
+                                    99998.7734      8.8       0.0000       0.0000   99998.7734  sram_top_DW64_MW8_AW15_1
+top_acce_0/conv_post_0/sramArray_0/mux2_64bit_0
+                                       92.0001      0.0      92.0001       0.0000       0.0000  mux2_64bit
+top_acce_0/conv_post_0/sramArray_0/mux8_0
+                                     1492.0795      0.1    1492.0795       0.0000       0.0000  mux8
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_A
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_0
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_B
+                                      819.6144      0.1     250.3318     569.2826       0.0000  sequence2parallel_15
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_C
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_14
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_D
+                                      818.3437      0.1     249.0611     569.2826       0.0000  sequence2parallel_13
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_E
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_12
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_F
+                                      818.3437      0.1     249.0611     569.2826       0.0000  sequence2parallel_11
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_G
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_10
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_H
+                                      818.3437      0.1     249.0611     569.2826       0.0000  sequence2parallel_9
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_I
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_8
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_J
+                                      819.6144      0.1     250.3318     569.2826       0.0000  sequence2parallel_7
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_K
+                                      895.6035      0.1     283.6247     611.9788       0.0000  sequence2parallel_6
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_L
+                                      894.5869      0.1     282.6081     611.9788       0.0000  sequence2parallel_5
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_M
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_4
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_N
+                                      818.3437      0.1     249.0611     569.2826       0.0000  sequence2parallel_3
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_O
+                                      899.9239      0.1     287.9452     611.9788       0.0000  sequence2parallel_2
+top_acce_0/conv_post_0/sramArray_0/sequence2parallel_P
+                                      818.3437      0.1     249.0611     569.2826       0.0000  sequence2parallel_1
+top_acce_0/weight_distribution_0    73043.5287      6.4   30583.1809   42434.9334       0.0000  weight_distribution
+top_acce_0/weight_distribution_0/add_175
+                                       25.4144      0.0      25.4144       0.0000       0.0000  weight_distribution_DW01_inc_0
+--------------------------------  ------------  -------  -----------  -----------  -----------  ------------------------------
+Total                                                    194751.0557  144395.9824  799990.1875
+
+1
